@@ -37,6 +37,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'category',
+    'accounts',
+    'store',
+    'carts',
 ]
 
 MIDDLEWARE = [
@@ -54,7 +58,7 @@ ROOT_URLCONF = 'e_commerce.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['c:/ECOM_CRED_GREEN/e_commerce/templates'],
+        'DIRS': ['C:/COM-CRED-GREEN/e_commerce/templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -62,12 +66,16 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'category.context_processor.menu_link',
+                'carts.context_processors.counter',
             ],
         },
     },
 ]
 
 WSGI_APPLICATION = 'e_commerce.wsgi.application'
+
+AUTH_USER_MODEL='accounts.Accounts'
 
 
 # Database
@@ -118,9 +126,14 @@ USE_TZ = True
 STATIC_URL = 'static/'
 STATIC_ROOT = '/e_commerce/static/'
 STATICFILES_DIRS=[
-     BASE_DIR / 'static',
+     BASE_DIR /
     'e_commerce/static',
 ]
+
+# pour les photo,... media
+MEDIA_URL ='/media/'
+STATIC_ROOT = BASE_DIR /'static'
+
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
