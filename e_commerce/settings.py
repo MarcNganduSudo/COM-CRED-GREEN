@@ -58,7 +58,7 @@ ROOT_URLCONF = 'e_commerce.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['C:/ECOM-CRED-GREEN/e_commerce/templates'],
+        'DIRS': ['C:/ECOM-CRED-GREEN/COM-CRED-GREEN/e_commerce/templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -139,3 +139,16 @@ STATIC_ROOT = BASE_DIR /'static'
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+from django.contrib.messages import constants as messages
+
+MESSAGE_TAGS = {
+    messages.ERROR: "danger",
+}
+
+#SHTP Configuration
+EMAIL_HOST= 'smtp.gmail.com'
+EMAIL_PORT=587
+EMAIL_HOST_USER= 'bahatimarc2000@gmail.com'
+EMAIL_HOST_PASSWORD='qeiugnaofxudomgh'
+EMAIL_USE_TLS =True
