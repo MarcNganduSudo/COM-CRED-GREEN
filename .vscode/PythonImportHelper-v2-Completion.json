@@ -192,6 +192,22 @@
         "documentation": {}
     },
     {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
         "label": "models",
         "importPath": "django.db",
         "description": "django.db",
@@ -217,6 +233,14 @@
     },
     {
         "label": "auth",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
         "importPath": "django.contrib",
         "description": "django.contrib",
         "isExtraImport": true,
@@ -309,6 +333,22 @@
         "description": "django.apps",
         "isExtraImport": true,
         "detail": "django.apps",
+        "documentation": {}
+    },
+    {
+        "label": "forms",
+        "importPath": "django",
+        "description": "django",
+        "isExtraImport": true,
+        "detail": "django",
+        "documentation": {}
+    },
+    {
+        "label": "forms",
+        "importPath": "django",
+        "description": "django",
+        "isExtraImport": true,
+        "detail": "django",
         "documentation": {}
     },
     {
@@ -416,6 +456,22 @@
         "documentation": {}
     },
     {
+        "label": "include",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
         "label": "reverse",
         "importPath": "django.urls",
         "description": "django.urls",
@@ -489,6 +545,14 @@
     },
     {
         "label": "render",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "redirect",
         "importPath": "django.shortcuts",
         "description": "django.shortcuts",
         "isExtraImport": true,
@@ -576,7 +640,23 @@
         "documentation": {}
     },
     {
+        "label": "HttpResponse",
+        "importPath": "django.http",
+        "description": "django.http",
+        "isExtraImport": true,
+        "detail": "django.http",
+        "documentation": {}
+    },
+    {
         "label": "Cart",
+        "importPath": "carts.models",
+        "description": "carts.models",
+        "isExtraImport": true,
+        "detail": "carts.models",
+        "documentation": {}
+    },
+    {
+        "label": "CartItem",
         "importPath": "carts.models",
         "description": "carts.models",
         "isExtraImport": true,
@@ -706,6 +786,14 @@
         "documentation": {}
     },
     {
+        "label": "settings",
+        "importPath": "django.conf",
+        "description": "django.conf",
+        "isExtraImport": true,
+        "detail": "django.conf",
+        "documentation": {}
+    },
+    {
         "label": "django.core.exceptions",
         "kind": 6,
         "isExtraImport": true,
@@ -776,6 +864,14 @@
         "description": "store.models",
         "isExtraImport": true,
         "detail": "store.models",
+        "documentation": {}
+    },
+    {
+        "label": "Accounts",
+        "importPath": "accounts.models",
+        "description": "accounts.models",
+        "isExtraImport": true,
+        "detail": "accounts.models",
         "documentation": {}
     },
     {
@@ -873,6 +969,15 @@
         "description": "orders.models",
         "isExtraImport": true,
         "detail": "orders.models",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "datetime",
+        "description": "datetime",
+        "detail": "datetime",
         "documentation": {}
     },
     {
@@ -1458,7 +1563,7 @@
         "kind": 5,
         "importPath": "e_commerce.urls",
         "description": "e_commerce.urls",
-        "peekOfCode": "urlpatterns = [\n    path('admin/', admin.site.urls),\n    path('',views.home,name='home'),\n    path('',include('store.urls')) ,#cava me conduirevert un urls qui va a son tour me conduire vers views\n    path('',include('carts.urls')) ,\n    path('',include('accounts.urls')) \n]+static(settings.MEDIA_URL,document_root= settings.MEDIA_ROOT)",
+        "peekOfCode": "urlpatterns = [\n    path('admin/', admin.site.urls),\n    path('',views.home,name='home'),\n    path('',include('store.urls')) ,#cava me conduirevert un urls qui va a son tour me conduire vers views\n    path('',include('carts.urls')) ,\n    path('',include('accounts.urls')),\n    #orders\n    path('',include('orders.urls')),\n]+static(settings.MEDIA_URL,document_root= settings.MEDIA_ROOT)",
         "detail": "e_commerce.urls",
         "documentation": {}
     },
@@ -1508,6 +1613,15 @@
         "documentation": {}
     },
     {
+        "label": "OrderForm",
+        "kind": 6,
+        "importPath": "orders.forms",
+        "description": "orders.forms",
+        "peekOfCode": "class OrderForm(forms.ModelForm):\n    class Meta:\n        model = Order\n        fields = ['first_name', 'last_name', 'phone', 'email', 'address_line_1', 'address_line_2', 'country', 'state', 'city', 'order_note']",
+        "detail": "orders.forms",
+        "documentation": {}
+    },
+    {
         "label": "Payment",
         "kind": 6,
         "importPath": "orders.models",
@@ -1535,6 +1649,42 @@
         "documentation": {}
     },
     {
+        "label": "urlpatterns",
+        "kind": 5,
+        "importPath": "orders.urls",
+        "description": "orders.urls",
+        "peekOfCode": "urlpatterns = [\n    path('orders/place_order/',views.place_order,name=\"place_order\"),\n    path('orders/payments/',views.payments,name=\"payments\"),\n    path('orders/order_complete/',views.order_complete,name=\"order_complete\"),\n]",
+        "detail": "orders.urls",
+        "documentation": {}
+    },
+    {
+        "label": "payments",
+        "kind": 2,
+        "importPath": "orders.views",
+        "description": "orders.views",
+        "peekOfCode": "def payments(request):\n    return render(request,'orders/payment.html')\ndef place_order(request,total=0, quantity=0):\n    current_user=request.user\n    cart_items=CartItem.objects.filter(user=current_user)\n    cart_count=cart_items.count()\n    if cart_count <= 0:\n        return redirect('store')\n    grand_total = 0\n    tax=0",
+        "detail": "orders.views",
+        "documentation": {}
+    },
+    {
+        "label": "place_order",
+        "kind": 2,
+        "importPath": "orders.views",
+        "description": "orders.views",
+        "peekOfCode": "def place_order(request,total=0, quantity=0):\n    current_user=request.user\n    cart_items=CartItem.objects.filter(user=current_user)\n    cart_count=cart_items.count()\n    if cart_count <= 0:\n        return redirect('store')\n    grand_total = 0\n    tax=0\n    for cart_item in cart_items:\n        total += (cart_item.product.price * cart_item.quantity)",
+        "detail": "orders.views",
+        "documentation": {}
+    },
+    {
+        "label": "order_complete",
+        "kind": 2,
+        "importPath": "orders.views",
+        "description": "orders.views",
+        "peekOfCode": "def order_complete(request):\n    return render(request,'orders/order_complete.html')",
+        "detail": "orders.views",
+        "documentation": {}
+    },
+    {
         "label": "Migration",
         "kind": 6,
         "importPath": "store.migrations.0001_initial",
@@ -1553,11 +1703,20 @@
         "documentation": {}
     },
     {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "store.migrations.0003_reviewrating",
+        "description": "store.migrations.0003_reviewrating",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('store', '0002_variation'),\n        migrations.swappable_dependency(settings.AUTH_USER_MODEL),\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='ReviewRating',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),",
+        "detail": "store.migrations.0003_reviewrating",
+        "documentation": {}
+    },
+    {
         "label": "ProductAdmin",
         "kind": 6,
         "importPath": "store.admin",
         "description": "store.admin",
-        "peekOfCode": "class ProductAdmin(admin.ModelAdmin):\n    list_display=('product_name','price','stock','category','modified_date','is_available')\n    prepopulated_fields ={'slug':('product_name',)}\nclass VariationAdmin(admin.ModelAdmin):\n    list_display=('product','variation_category','variation_value','is_active')\n    list_editable=('is_active',)#ca c'est juste pour modifier la case de is_active te le mettre en un petit caree\n    list_filter = ('product','variation_category','variation_value')\nadmin.site.register(Product,ProductAdmin)\nadmin.site.register(Variation,VariationAdmin)",
+        "peekOfCode": "class ProductAdmin(admin.ModelAdmin):\n    list_display=('product_name','price','stock','category','modified_date','is_available')\n    prepopulated_fields ={'slug':('product_name',)}\nclass VariationAdmin(admin.ModelAdmin):\n    list_display=('product','variation_category','variation_value','is_active')\n    list_editable=('is_active',)#ca c'est juste pour modifier la case de is_active te le mettre en un petit caree\n    list_filter = ('product','variation_category','variation_value')\nadmin.site.register(Product,ProductAdmin)\nadmin.site.register(Variation,VariationAdmin)\nadmin.site.register(ReviewRating)",
         "detail": "store.admin",
         "documentation": {}
     },
@@ -1566,7 +1725,7 @@
         "kind": 6,
         "importPath": "store.admin",
         "description": "store.admin",
-        "peekOfCode": "class VariationAdmin(admin.ModelAdmin):\n    list_display=('product','variation_category','variation_value','is_active')\n    list_editable=('is_active',)#ca c'est juste pour modifier la case de is_active te le mettre en un petit caree\n    list_filter = ('product','variation_category','variation_value')\nadmin.site.register(Product,ProductAdmin)\nadmin.site.register(Variation,VariationAdmin)",
+        "peekOfCode": "class VariationAdmin(admin.ModelAdmin):\n    list_display=('product','variation_category','variation_value','is_active')\n    list_editable=('is_active',)#ca c'est juste pour modifier la case de is_active te le mettre en un petit caree\n    list_filter = ('product','variation_category','variation_value')\nadmin.site.register(Product,ProductAdmin)\nadmin.site.register(Variation,VariationAdmin)\nadmin.site.register(ReviewRating)",
         "detail": "store.admin",
         "documentation": {}
     },
@@ -1577,6 +1736,15 @@
         "description": "store.apps",
         "peekOfCode": "class StoreConfig(AppConfig):\n    default_auto_field = 'django.db.models.BigAutoField'\n    name = 'store'",
         "detail": "store.apps",
+        "documentation": {}
+    },
+    {
+        "label": "ReviewForm",
+        "kind": 6,
+        "importPath": "store.forms",
+        "description": "store.forms",
+        "peekOfCode": "class ReviewForm(forms.ModelForm):\n    class Meta:\n        model:ReviewRating\n        firlds={'subject','review','rating'}",
+        "detail": "store.forms",
         "documentation": {}
     },
     {
@@ -1602,7 +1770,16 @@
         "kind": 6,
         "importPath": "store.models",
         "description": "store.models",
-        "peekOfCode": "class Variation(models.Model):\n        product = models.ForeignKey(Product,on_delete=models.CASCADE)\n        variation_category=models.CharField(max_length=100,choices=variation_category_choice)\n        variation_value=models.CharField(max_length=100)\n        is_active      = models.BooleanField(default=True)\n        created_date =models.DateTimeField(auto_now=True)\n        objects =VariationManager()\n        def __str__(self):\n            return self.variation_value",
+        "peekOfCode": "class Variation(models.Model):\n        product = models.ForeignKey(Product,on_delete=models.CASCADE)\n        variation_category=models.CharField(max_length=100,choices=variation_category_choice)\n        variation_value=models.CharField(max_length=100)\n        is_active      = models.BooleanField(default=True)\n        created_date =models.DateTimeField(auto_now=True)\n        objects =VariationManager()\n        def __str__(self):\n            return self.variation_value\nclass ReviewRating(models.Model):",
+        "detail": "store.models",
+        "documentation": {}
+    },
+    {
+        "label": "ReviewRating",
+        "kind": 6,
+        "importPath": "store.models",
+        "description": "store.models",
+        "peekOfCode": "class ReviewRating(models.Model):\n    product=models.ForeignKey(Product,on_delete=models.CASCADE)\n    user=models.ForeignKey(Accounts,on_delete=models.CASCADE)\n    subject=models.CharField(max_length=100,blank=True)\n    review=models.TextField(max_length=500,blank=True)\n    rating=models.FloatField()\n    ip=models.CharField(max_length=20,blank=True)\n    status=models.BooleanField(default=True)\n    created_at=models.DateTimeField(auto_now_add=True)\n    updated_at=models.DateTimeField(auto_now=True)",
         "detail": "store.models",
         "documentation": {}
     },

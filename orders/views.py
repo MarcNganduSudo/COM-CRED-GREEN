@@ -6,10 +6,9 @@ from .models import Order
 from .forms import OrderForm
 
 
-# Create your views here.
-
 def payments(request):
     return render(request,'orders/payment.html')
+
 
 
 def place_order(request,total=0, quantity=0):
@@ -73,4 +72,8 @@ def place_order(request,total=0, quantity=0):
             
     else:
         return redirect('checkout')
+    
+    
+def order_complete(request):
+    return render(request,'orders/order_complete.html')
    
