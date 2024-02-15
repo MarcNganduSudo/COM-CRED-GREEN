@@ -288,6 +288,14 @@
         "documentation": {}
     },
     {
+        "label": "messages",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
         "label": "UserAdmin",
         "importPath": "django.contrib.auth.admin",
         "description": "django.contrib.auth.admin",
@@ -569,6 +577,22 @@
     },
     {
         "label": "get_object_or_404",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "render",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "redirect",
         "importPath": "django.shortcuts",
         "description": "django.shortcuts",
         "isExtraImport": true,
@@ -972,6 +996,14 @@
         "documentation": {}
     },
     {
+        "label": "OrderProduct",
+        "importPath": "orders.models",
+        "description": "orders.models",
+        "isExtraImport": true,
+        "detail": "orders.models",
+        "documentation": {}
+    },
+    {
         "label": "datetime",
         "kind": 6,
         "isExtraImport": true,
@@ -994,6 +1026,30 @@
         "description": "category.models",
         "isExtraImport": true,
         "detail": "category.models",
+        "documentation": {}
+    },
+    {
+        "label": "Avg",
+        "importPath": "django.db.models",
+        "description": "django.db.models",
+        "isExtraImport": true,
+        "detail": "django.db.models",
+        "documentation": {}
+    },
+    {
+        "label": "Count",
+        "importPath": "django.db.models",
+        "description": "django.db.models",
+        "isExtraImport": true,
+        "detail": "django.db.models",
+        "documentation": {}
+    },
+    {
+        "label": "Q",
+        "importPath": "django.db.models",
+        "description": "django.db.models",
+        "isExtraImport": true,
+        "detail": "django.db.models",
         "documentation": {}
     },
     {
@@ -1026,14 +1082,6 @@
         "description": "django.core.paginator",
         "isExtraImport": true,
         "detail": "django.core.paginator",
-        "documentation": {}
-    },
-    {
-        "label": "Q",
-        "importPath": "django.db.models",
-        "description": "django.db.models",
-        "isExtraImport": true,
-        "detail": "django.db.models",
         "documentation": {}
     },
     {
@@ -1743,7 +1791,7 @@
         "kind": 6,
         "importPath": "store.forms",
         "description": "store.forms",
-        "peekOfCode": "class ReviewForm(forms.ModelForm):\n    class Meta:\n        model:ReviewRating\n        firlds={'subject','review','rating'}",
+        "peekOfCode": "class ReviewForm(forms.ModelForm):\n    class Meta:\n        model = ReviewRating\n        fields = ['subject', 'review', 'rating']",
         "detail": "store.forms",
         "documentation": {}
     },
@@ -1788,7 +1836,7 @@
         "kind": 5,
         "importPath": "store.urls",
         "description": "store.urls",
-        "peekOfCode": "urlpatterns = [\n    path('store/', views.store, name='store'),\n    path('store/category/<slug:category_slug>/', views.store, name='products_by_category'),  # Fixed the URL pattern\n    path('store/category/<slug:category_slug>/<slug:product_slug>/', views.product_detail, name='products_details'),  # Fixed the URL pattern\n    path('store/search/',views.search,name='search')\n]",
+        "peekOfCode": "urlpatterns = [\n    path('store/', views.store, name='store'),\n    path('store/category/<slug:category_slug>/', views.store, name='products_by_category'),  # Fixed the URL pattern\n    path('store/category/<slug:category_slug>/<slug:product_slug>/', views.product_detail, name='products_details'),  # Fixed the URL pattern\n    path('store/search/',views.search,name='search'),\n    path('store/submit_review/<int:product_id>',views.submit_review,name=\"submit_review\"),\n]",
         "detail": "store.urls",
         "documentation": {}
     },
@@ -1806,7 +1854,7 @@
         "kind": 2,
         "importPath": "store.views",
         "description": "store.views",
-        "peekOfCode": "def product_detail(request,category_slug,product_slug):\n    try:\n        single_product = Product.objects.get(category__slug=category_slug,slug=product_slug)#dans produit je dois recuperer le slug se trouvant dans categorie\n        in_cart=CartItem.objects.filter(cart__cart_id=_cart_id(request),product=single_product).exists()\n    except Exception as e:\n        raise e\n    context={\n        'single_product':single_product,\n        'in_cart':in_cart\n    }",
+        "peekOfCode": "def product_detail(request,category_slug,product_slug):\n    try:\n        single_product = Product.objects.get(category__slug=category_slug,slug=product_slug)#dans produit je dois recuperer le slug se trouvant dans categorie\n        in_cart=CartItem.objects.filter(cart__cart_id=_cart_id(request),product=single_product).exists()\n    except Exception as e:\n        raise e\n    # try:\n    #     orderproduct=OrderProduct.objects.filter(user=request.user,product_id=single_product.id).exists()\n    # except OrderProduct.DoesNotExist:\n    #     orderproduct=None a revoirunpeu plus tard",
         "detail": "store.views",
         "documentation": {}
     },
@@ -1816,6 +1864,15 @@
         "importPath": "store.views",
         "description": "store.views",
         "peekOfCode": "def search(request):\n    if 'keyword' in request.GET:\n        keyword = request.GET['keyword']\n        if keyword:\n            products=Product.objects.order_by('created_date').filter(Q(description__icontains=keyword) | Q(product_name__icontains=keyword))\n            product_count =products.count()#pour compter le nombre de produit se trouvant dans la table\n    context = {\n        'products':products,\n        'product_count':product_count\n    }",
+        "detail": "store.views",
+        "documentation": {}
+    },
+    {
+        "label": "submit_review",
+        "kind": 2,
+        "importPath": "store.views",
+        "description": "store.views",
+        "peekOfCode": "def submit_review(request, product_id):\n    url= request.META.get('HTTP_REFERER')\n    if request.method =='POST':\n        try:\n            reviews=ReviewRating.objects.get(user__id=request.user.id,product__id=product_id)\n            form=ReviewForm(request.POST,instance=reviews)\n            form.save()\n            messages.success(request,'Thank you your review has been update!!')\n            return redirect(url)\n        except ReviewRating.DoesNotExist:",
         "detail": "store.views",
         "documentation": {}
     },
