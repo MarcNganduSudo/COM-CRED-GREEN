@@ -101,8 +101,28 @@
                 <p class="text-center mb-3">
                     <img src="{% static './images/misc/payments.png'%}" height="26">
                 </p>
-        
-                <button href="{% url 'checkout'%}" class="btn btn-primary btn-block"> Make Payement </button>
+                <script>
+      {% comment %} ------------------  envois du paiement          ----------------- {% endcomment %}
+                  {% comment %} #la valeur du montant que je dois payer {% endcomment %}
+                  var amount ={{ grand_total}}
+                  var url ={% url 'payments' %}
+                 
+                  function sendData(){
+                    fetch(url,{
+                      method="POST",
+                      header:{
+                        "contnt-type":"application/json"
+                        "X-CSRFToken":
+                      }
+                    })
+                    .then(response => response.json())
+                    .then(data => console.log(data));
+                  }
+                 
+       {% comment %} ------------------   fin envois du paiement         ----------------- {% endcomment %}
+       <button href="{% url 'checkout'%}" class="btn btn-primary btn-block"> Make Payement </button>
+                </script>
+
             </div> <!-- card-body.// -->
             </div> <!-- card.// -->
     
