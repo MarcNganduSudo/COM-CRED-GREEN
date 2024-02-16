@@ -102,28 +102,52 @@
                     <img src="{% static './images/misc/payments.png'%}" height="26">
                 </p>
                 <script>
-      {% comment %} ------------------  envois du paiement          ----------------- {% endcomment %}
-                  {% comment %} #la valeur du montant que je dois payer {% endcomment %}
-                  var amount ={{ grand_total}}
-                  var url ={% url 'payments' %}
-                 
-                  function sendData(){
-                    fetch(url,{
-                      method="POST",
-                      header:{
-                        "contnt-type":"application/json"
-                        "X-CSRFToken":
-                      }
-                    })
-                    .then(response => response.json())
-                    .then(data => console.log(data));
+                  var url = "{% url 'payments' %}";
+                
+                  function sendData() {
+                    const orderID = document.querySelector('#orderID');
+                    const transID = document.querySelector('#transID');
+                    const paymentMethod = document.querySelector('#paymentMethod');
+                    const status = document.querySelector('#status');
+                
+                    // Vérifier si les éléments existent avant de lire leur propriété value
+                    if (orderID && transID && paymentMethod && status) {
+                      const data = {
+                        orderID: orderID.value,
+                        transID: transID.value,
+                        payment_method: paymentMethod.value,
+                        status: status.value,
+                      };
+                
+                      const csrftoken = document.querySelector('[name=csrfmiddlewaretoken]').value;
+                
+                      fetch(url, {
+                        method: "POST",
+                        headers: {
+                          "Content-Type": "application/json",
+                          "X-CSRFToken": csrftoken,
+                        },
+                        body: JSON.stringify(data),
+                      })
+                        .then(response => response.json())
+                        .then(data => {
+                          console.log(data);
+                          // Vous pouvez également utiliser une requête AJAX pour envoyer les données vers la vue Django
+                        })
+                        .catch(error => console.error('Error:', error));
+                    }
                   }
-                 
-       {% comment %} ------------------   fin envois du paiement         ----------------- {% endcomment %}
-       <button href="{% url 'checkout'%}" class="btn btn-primary btn-block"> Make Payement </button>
                 </script>
-
-            </div> <!-- card-body.// -->
+                
+                <form method="post">
+                  {% csrf_token %}
+                  <input type="hidden" name="csrfmiddlewaretoken" value="{{ csrf_token }}">
+                  <input type="text" id="orderID" name="orderID">
+                  <input type="text" id="transID" name="transID">
+                  <input type="text" id="paymentMethod" name="paymentMethod">
+                  <input type="text" id="status" name="status">
+                  <button onclick="sendData()" class="btn btn-primary btn-block">Make Payment</button>
+                </form>
             </div> <!-- card.// -->
     
     </aside> <!-- col.// -->
