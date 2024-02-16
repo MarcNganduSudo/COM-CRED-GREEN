@@ -1,28 +1,37 @@
 import datetime
-import json
 from django.shortcuts import redirect, render
 from django.http import HttpResponse,JsonResponse
 from carts.models import CartItem
 from .models import Order, Payment
 from .forms import OrderForm
 import json
+from django.core.exceptions import ObjectDoesNotExist  # Importez ObjectDoesNotExist depuis django.core.exceptions
 
 def payments(request):
-    body = json.loads(request.body)
-    print(body)
-    payment = Payment(
-        user=request.user,
-        payment_id=body['transID'],
-        payment_method=body['payment_method'],
-        amount_paid=Order.order_total,
-        status=body['status'],
-    )
-    payment.save()  # Correct usage: pass the instance of the model as the first argument
-    
-    
-    
-
-    return JsonResponse({'success': 'Payment successful'}, status=200)
+    if request.method == "POST":
+        data = json.loads(request.body)
+        print(data)
+        try:
+            orders = Order.objects.filter(is_ordered=False)
+            if orders.exists():
+                for order in orders:
+                    payment = Payment(
+                        user=request.user,
+                        payment_id=data['orderID'],
+                        payment_method=data['payment_method'],
+                        amount_paid=order.order_total,
+                        status=data['status']
+                    )
+                    payment.save()
+                    order.payment = payment
+                    order.is_ordered = True
+                    order.save()
+                return JsonResponse(data)
+            else:
+                return JsonResponse({'error': 'Order not found'}, status=400)
+        except ObjectDoesNotExist:
+            return JsonResponse({'error': 'Object does not exist'}, status=400)
+    return JsonResponse({'error': 'Invalid request'}, status=400)
 
 
 def place_order(request,total=0, quantity=0):

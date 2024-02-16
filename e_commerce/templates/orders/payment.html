@@ -102,13 +102,15 @@
                     <img src="{% static './images/misc/payments.png'%}" height="26">
                 </p>
                 <script>
-                  var url = "orders/payments";
+                  var url = "{% url 'payments' %}";
+                  var total="{{ grand_total}}"
                 
                   function sendData() {
                     const orderID = document.querySelector('#orderID');
                     const transID = document.querySelector('#transID');
                     const paymentMethod = document.querySelector('#paymentMethod');
                     const status = document.querySelector('#status');
+                    const grand_total = document.querySelector('#total');
                 
                     // Vérifier si les éléments existent avant de lire leur propriété value
                     if (orderID && transID && paymentMethod && status) {
@@ -117,8 +119,8 @@
                         transID: transID.value,
                         payment_method: paymentMethod.value,
                         status: status.value,
+                        grand_total: status.grand_total,
                       };
-                
                       const csrftoken = document.querySelector('[name=csrfmiddlewaretoken]').value;
                 
                       fetch(url, {
@@ -128,7 +130,9 @@
                           "X-CSRFToken": csrftoken,
                         },
                         body: JSON.stringify(data),
+                      
                       })
+                      alert("votre payement a ete bien valider merci")
                         .then(response => response.json())
                         .then(data => {
                           console.log(data);
@@ -137,10 +141,12 @@
                         .catch(error => console.error('Error:', error));
                     }
                   }
+                
                 </script>
                 
                 <form method="post">
                   {% csrf_token %}
+                 
                   <input type="hidden" name="csrfmiddlewaretoken" value="{{ csrf_token }}">
                   <input type="text" id="orderID" name="orderID">
                   <input type="text" id="transID" name="transID">
