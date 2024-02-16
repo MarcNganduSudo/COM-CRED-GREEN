@@ -1,46 +1,28 @@
 import datetime
 import json
 from django.shortcuts import redirect, render
-from django.http import HttpResponse
+from django.http import HttpResponse,JsonResponse
 from carts.models import CartItem
 from .models import Order, Payment
 from .forms import OrderForm
-
-
-from django.shortcuts import render
-from django.http import JsonResponse
-from .models import Order, Payment
-import json
-
-from django.shortcuts import render
-from django.http import JsonResponse
-from .models import Order, Payment
 import json
 
 def payments(request):
     body = json.loads(request.body)
     print(body)
-
-    try:
-        order = Order.objects.get(user=request.user, is_ordered=True, order_number=body['orderID'])
-    except Order.DoesNotExist:
-        return JsonResponse({'error': 'Order matching query does not exist.'}, status=404)
-
     payment = Payment(
         user=request.user,
         payment_id=body['transID'],
         payment_method=body['payment_method'],
-        amount_paid=order.order_total,
+        amount_paid=Order.order_total,
         status=body['status'],
     )
-    payment.save()
-
-    order.payment = payment
-    order.is_ordered = True
-    order.save()
-
-    print(order)
+    payment.save()  # Correct usage: pass the instance of the model as the first argument
     
+    
+    
+
+    return JsonResponse({'success': 'Payment successful'}, status=200)
 
 
 def place_order(request,total=0, quantity=0):
