@@ -152,6 +152,46 @@
         "documentation": {}
     },
     {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
         "label": "models",
         "importPath": "django.db",
         "description": "django.db",
@@ -233,14 +273,6 @@
     },
     {
         "label": "auth",
-        "importPath": "django.contrib",
-        "description": "django.contrib",
-        "isExtraImport": true,
-        "detail": "django.contrib",
-        "documentation": {}
-    },
-    {
-        "label": "admin",
         "importPath": "django.contrib",
         "description": "django.contrib",
         "isExtraImport": true,
@@ -464,14 +496,6 @@
         "documentation": {}
     },
     {
-        "label": "include",
-        "importPath": "django.urls",
-        "description": "django.urls",
-        "isExtraImport": true,
-        "detail": "django.urls",
-        "documentation": {}
-    },
-    {
         "label": "path",
         "importPath": "django.urls",
         "description": "django.urls",
@@ -664,6 +688,14 @@
         "documentation": {}
     },
     {
+        "label": "JsonResponse",
+        "importPath": "django.http",
+        "description": "django.http",
+        "isExtraImport": true,
+        "detail": "django.http",
+        "documentation": {}
+    },
+    {
         "label": "HttpResponse",
         "importPath": "django.http",
         "description": "django.http",
@@ -720,6 +752,14 @@
         "documentation": {}
     },
     {
+        "label": "render_to_string",
+        "importPath": "django.template.loader",
+        "description": "django.template.loader",
+        "isExtraImport": true,
+        "detail": "django.template.loader",
+        "documentation": {}
+    },
+    {
         "label": "urlsafe_base64_encode",
         "importPath": "django.utils.http",
         "description": "django.utils.http",
@@ -749,6 +789,14 @@
         "description": "django.contrib.auth.tokens",
         "isExtraImport": true,
         "detail": "django.contrib.auth.tokens",
+        "documentation": {}
+    },
+    {
+        "label": "EmailMessage",
+        "importPath": "django.core.mail",
+        "description": "django.core.mail",
+        "isExtraImport": true,
+        "detail": "django.core.mail",
         "documentation": {}
     },
     {
@@ -835,19 +883,11 @@
         "documentation": {}
     },
     {
-        "label": "Product",
-        "importPath": "store.models",
-        "description": "store.models",
+        "label": "ObjectDoesNotExist",
+        "importPath": "django.core.exceptions",
+        "description": "django.core.exceptions",
         "isExtraImport": true,
-        "detail": "store.models",
-        "documentation": {}
-    },
-    {
-        "label": "Variation",
-        "importPath": "store.models",
-        "description": "store.models",
-        "isExtraImport": true,
-        "detail": "store.models",
+        "detail": "django.core.exceptions",
         "documentation": {}
     },
     {
@@ -875,6 +915,22 @@
         "documentation": {}
     },
     {
+        "label": "Variation",
+        "importPath": "store.models",
+        "description": "store.models",
+        "isExtraImport": true,
+        "detail": "store.models",
+        "documentation": {}
+    },
+    {
+        "label": "Product",
+        "importPath": "store.models",
+        "description": "store.models",
+        "isExtraImport": true,
+        "detail": "store.models",
+        "documentation": {}
+    },
+    {
         "label": "Product",
         "importPath": "store.models",
         "description": "store.models",
@@ -884,6 +940,14 @@
     },
     {
         "label": "Variation",
+        "importPath": "store.models",
+        "description": "store.models",
+        "isExtraImport": true,
+        "detail": "store.models",
+        "documentation": {}
+    },
+    {
+        "label": "Product",
         "importPath": "store.models",
         "description": "store.models",
         "isExtraImport": true,
@@ -1010,6 +1074,15 @@
         "importPath": "datetime",
         "description": "datetime",
         "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "json",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "json",
+        "description": "json",
+        "detail": "json",
         "documentation": {}
     },
     {
@@ -1652,6 +1725,51 @@
         "documentation": {}
     },
     {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "orders.migrations.0003_remove_orderproduct_color_remove_orderproduct_size",
+        "description": "orders.migrations.0003_remove_orderproduct_color_remove_orderproduct_size",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('orders', '0002_order_orderproduct'),\n    ]\n    operations = [\n        migrations.RemoveField(\n            model_name='orderproduct',\n            name='color',\n        ),\n        migrations.RemoveField(",
+        "detail": "orders.migrations.0003_remove_orderproduct_color_remove_orderproduct_size",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "orders.migrations.0004_remove_orderproduct_variation_and_more",
+        "description": "orders.migrations.0004_remove_orderproduct_variation_and_more",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('orders', '0003_remove_orderproduct_color_remove_orderproduct_size'),\n        ('store', '0003_reviewrating'),\n    ]\n    operations = [\n        migrations.RemoveField(\n            model_name='orderproduct',\n            name='variation',\n        ),",
+        "detail": "orders.migrations.0004_remove_orderproduct_variation_and_more",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "orders.migrations.0005_orderproduct_product_price",
+        "description": "orders.migrations.0005_orderproduct_product_price",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('orders', '0004_remove_orderproduct_variation_and_more'),\n    ]\n    operations = [\n        migrations.AddField(\n            model_name='orderproduct',\n            name='product_price',\n            field=models.FloatField(default=0.0),\n        ),",
+        "detail": "orders.migrations.0005_orderproduct_product_price",
+        "documentation": {}
+    },
+    {
+        "label": "OrderProductInline",
+        "kind": 6,
+        "importPath": "orders.admin",
+        "description": "orders.admin",
+        "peekOfCode": "class OrderProductInline(admin.TabularInline):\n    model=OrderProduct\n    readonly_fields=('payment','user','product','quantity','product_price','ordered')\n    extra=0\nclass orderAdmin(admin.ModelAdmin):\n    list_display=['order_number','full_name','phone','email','city','order_total','tax','status','is_ordered','created_at']\n    list_filter =['status','is_ordered']\n    search_fields=['order_number','first_name','last_name','phone','email']\n    list_per_page=20\n    inlines=[OrderProductInline]",
+        "detail": "orders.admin",
+        "documentation": {}
+    },
+    {
+        "label": "orderAdmin",
+        "kind": 6,
+        "importPath": "orders.admin",
+        "description": "orders.admin",
+        "peekOfCode": "class orderAdmin(admin.ModelAdmin):\n    list_display=['order_number','full_name','phone','email','city','order_total','tax','status','is_ordered','created_at']\n    list_filter =['status','is_ordered']\n    search_fields=['order_number','first_name','last_name','phone','email']\n    list_per_page=20\n    inlines=[OrderProductInline]\n# Register your models here.\nadmin.site.register(Order,orderAdmin)\nadmin.site.register(Payment)\nadmin.site.register(OrderProduct)",
+        "detail": "orders.admin",
+        "documentation": {}
+    },
+    {
         "label": "OrdersConfig",
         "kind": 6,
         "importPath": "orders.apps",
@@ -1692,7 +1810,7 @@
         "kind": 6,
         "importPath": "orders.models",
         "description": "orders.models",
-        "peekOfCode": "class OrderProduct(models.Model):\n    order=models.ForeignKey(Order,on_delete=models.CASCADE)\n    payment=models.ForeignKey(Payment,on_delete=models.SET_NULL,blank=True,null=True)\n    user=models.ForeignKey(Accounts,on_delete=models.CASCADE)\n    product=models.ForeignKey(Product,on_delete=models.CASCADE)\n    variation=models.ForeignKey(Variation,on_delete=models.CASCADE)\n    color=models.CharField(max_length=50)\n    size=models.CharField(max_length=50)\n    quantity=models.IntegerField()\n    product_price=models.FloatField",
+        "peekOfCode": "class OrderProduct(models.Model):\n    order=models.ForeignKey(Order,on_delete=models.CASCADE)\n    payment=models.ForeignKey(Payment,on_delete=models.SET_NULL,blank=True,null=True)\n    user=models.ForeignKey(Accounts,on_delete=models.CASCADE)\n    product=models.ForeignKey(Product,on_delete=models.CASCADE)\n    variations =models.ManyToManyField(Variation,blank=True)\n    quantity=models.IntegerField()\n    product_price=models.FloatField(default=0.0)\n    ordered=models.BooleanField(default=False)\n    created_at=models.DateTimeField(auto_now_add=True)",
         "detail": "orders.models",
         "documentation": {}
     },
@@ -1701,7 +1819,7 @@
         "kind": 5,
         "importPath": "orders.urls",
         "description": "orders.urls",
-        "peekOfCode": "urlpatterns = [\n    path('orders/place_order/',views.place_order,name=\"place_order\"),\n    path('orders/payments/',views.payments,name=\"payments\"),\n    path('orders/order_complete/',views.order_complete,name=\"order_complete\"),\n]",
+        "peekOfCode": "urlpatterns = [\n    path('orders/place_order/',views.place_order,name=\"place_order\"),\n    path('orders/payments/',views.payments,name=\"payments\"),\n    path('orders/place_order/orders/payments',views.payments,name=\"payments\"),\n    path('orders/order_complete/',views.order_complete,name=\"order_complete\"),\n]",
         "detail": "orders.urls",
         "documentation": {}
     },
@@ -1710,7 +1828,7 @@
         "kind": 2,
         "importPath": "orders.views",
         "description": "orders.views",
-        "peekOfCode": "def payments(request):\n    return render(request,'orders/payment.html')\ndef place_order(request,total=0, quantity=0):\n    current_user=request.user\n    cart_items=CartItem.objects.filter(user=current_user)\n    cart_count=cart_items.count()\n    if cart_count <= 0:\n        return redirect('store')\n    grand_total = 0\n    tax=0",
+        "peekOfCode": "def payments(request):\n    if request.method == \"POST\":\n        data = json.loads(request.body)\n        print(data)\n        try:\n            orders = Order.objects.filter(is_ordered=False)\n            if orders.exists():\n                for order in orders:\n                    payment = Payment(\n                        user=request.user,",
         "detail": "orders.views",
         "documentation": {}
     },
@@ -1728,7 +1846,7 @@
         "kind": 2,
         "importPath": "orders.views",
         "description": "orders.views",
-        "peekOfCode": "def order_complete(request):\n    return render(request,'orders/order_complete.html')",
+        "peekOfCode": "def order_complete(request):\n    order_number = request.GET.get('order_number')\n    transID = request.GET.get('payment_id')\n    try:\n        order = Order.objects.get(order_number=order_number, is_ordered=True)\n        ordered_products = OrderProduct.objects.filter(order_id=order.id)\n        subtotal =0\n        for i in ordered_products:\n            subtotal += i.product_price * i.quantity\n        # Retrieve all payment objects with the given ID",
         "detail": "orders.views",
         "documentation": {}
     },

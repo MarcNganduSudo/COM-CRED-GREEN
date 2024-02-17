@@ -103,23 +103,23 @@
                 </p>
                 <script>
                   var url = "{% url 'payments' %}";
-                  var total="{{ grand_total}}"
+                  var total = "{{ grand_total }}";
+                  var redirect_url = "{% url 'order_complete' %}";
                 
                   function sendData() {
-                    const orderID = document.querySelector('#orderID');
-                    const transID = document.querySelector('#transID');
-                    const paymentMethod = document.querySelector('#paymentMethod');
-                    const status = document.querySelector('#status');
-                    const grand_total = document.querySelector('#total');
+                    const orderID = document.querySelector('#orderID').value;
+                    const transID = document.querySelector('#transID').value;
+                    const paymentMethod = document.querySelector('#paymentMethod').value;
+                    const status = document.querySelector('#status').value;
                 
                     // Vérifier si les éléments existent avant de lire leur propriété value
                     if (orderID && transID && paymentMethod && status) {
                       const data = {
-                        orderID: orderID.value,
-                        transID: transID.value,
-                        payment_method: paymentMethod.value,
-                        status: status.value,
-                        grand_total: status.grand_total,
+                        orderID: orderID,
+                        transID: transID,
+                        payment_method: paymentMethod,
+                        status: status,
+                        grand_total: total
                       };
                       const csrftoken = document.querySelector('[name=csrfmiddlewaretoken]').value;
                 
@@ -127,32 +127,27 @@
                         method: "POST",
                         headers: {
                           "Content-Type": "application/json",
-                          "X-CSRFToken": csrftoken,
+                          "X-CSRFToken": csrftoken
                         },
-                        body: JSON.stringify(data),
-                      
+                        body: JSON.stringify(data)
                       })
-                      alert("votre payement a ete bien valider merci")
-                        .then(response => response.json())
-                        .then(data => {
-                          console.log(data);
-                          // Vous pouvez également utiliser une requête AJAX pour envoyer les données vers la vue Django
-                        })
-                        .catch(error => console.error('Error:', error));
+                      .then(response => response.json())
+                      .then(data => {
+                        window.location.href = redirect_url + '?order_number=' + data.order_number + '&payment_id=' + data.transID;
+                      })
+                      alert("votre demande a ete bien valider merci!!!!!!1")
+                      .catch(error => console.error('Error:', error));
                     }
                   }
-                
                 </script>
                 
                 <form method="post">
                   {% csrf_token %}
-                 
-                  <input type="hidden" name="csrfmiddlewaretoken" value="{{ csrf_token }}">
                   <input type="text" id="orderID" name="orderID">
                   <input type="text" id="transID" name="transID">
                   <input type="text" id="paymentMethod" name="paymentMethod">
                   <input type="text" id="status" name="status">
-                  <button onclick="sendData()" class="btn btn-primary btn-block">Make Payment</button>
+                  <button type="button" onclick="sendData()" class="btn btn-primary btn-block">Make Payment</button>
                 </form>
             </div> <!-- card.// -->
     
