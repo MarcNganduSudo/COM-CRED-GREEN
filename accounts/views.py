@@ -1,7 +1,8 @@
-from django.shortcuts import redirect, render
-from accounts.form import RegistrationsForm
+from django.shortcuts import get_object_or_404, redirect, render
+from accounts.form import RegistrationsForm,UserForm,UserProfileForm
 from carts.views import _cart_id
-from .models import Accounts
+from orders.models import Order
+from .models import Accounts, UserProfile
 from django.contrib import messages,auth
 from django.contrib.auth.decorators import login_required
 from django.http import HttpResponse
@@ -148,7 +149,12 @@ def activate(request,uidb64,token):
     
 @login_required(login_url ='login')    
 def dashboard(request):
-    return render(request,'accounts/dashboard.html')
+    orders=Order.objects.order_by('-created_at').filter(user_id=request.user.id,is_ordered=True)
+    order_count = orders.count()
+    context={
+        'order_count':order_count
+    }
+    return render(request,'accounts/dashboard.html',context)
   
 def forgotPassword(request):
     if request.method=='POST':
@@ -208,3 +214,32 @@ def resetPassword(request):
             return redirect('resetPassword')
     else:
         return render(request,'accounts/resetPassword.html')
+    
+def my_orders(request):
+    orders=Order.objects.filter(user=request.user,is_ordered=True).order_by('-created_at')
+    path = request.path
+    context={
+        'orders':orders,
+        'path':path
+    }
+    return render(request,'accounts/my_orders.html',context,)
+
+def edit_profile(request):
+    userprofile= get_object_or_404(UserProfile,user=request.user)
+    if request.method =='POST':
+        user_form=UserForm(request.POST,instance=request.user)
+        profile_from=UserProfileForm(request.POST,request.FILES,instance=request.userprofile)
+        if user_form.is_valid() and profile_from.is_valid():
+            user_form.save()
+            profile_from.save()
+            messages.success(request,'your profile has been update')
+            return redirect(edit_profile)
+    else:
+        user_form=UserForm(instance=request.user)
+        profile_form=UserProfileForm(instance=request.userprofile)
+    context={
+        'user_form':user_form,
+        'profile_form':profile_form
+    }
+         
+    return render(request,'accounts/edit_profile.html',context)
