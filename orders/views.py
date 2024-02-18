@@ -1,6 +1,6 @@
 import datetime
 from django.core.mail import EmailMessage
-from django.shortcuts import redirect, render
+from django.shortcuts import get_list_or_404, get_object_or_404, redirect, render
 from django.http import HttpResponse,JsonResponse
 from carts.models import CartItem
 from store.models import Product
@@ -13,7 +13,7 @@ from django.template.loader import render_to_string
 def payments(request):
     if request.method == "POST":
         data = json.loads(request.body)
-        print(data)
+        
         try:
             orders = Order.objects.filter(is_ordered=False)
             if orders.exists():
@@ -31,7 +31,9 @@ def payments(request):
                     order.save()
                     #move the cart to items donc envoyer aussi les commande
                     carts_item =CartItem.objects.filter(user=request.user)
-                    for item in carts_item:
+                
+        
+            for item in carts_item:
                         orderproduct =OrderProduct()
                         orderproduct.order_id =order.id
                         orderproduct.payment=payment
@@ -49,35 +51,30 @@ def payments(request):
                         orderproduct.save()
                                             
                     #reduce the quantity of the sold products envoyer les prix
-                        product=Product.objects.get(id=item.product_id)
-                        product.stock -= item.quantity
-                        product.save()
+            product=Product.objects.get(id=item.product_id)
+            product.stock -= item.quantity
+            product.save()
                     #clear cart
-                        CartItem.objects.filter(user=request.user).delete()
+            CartItem.objects.filter(user=request.user).delete()
                     #send order recieved email to curser
-                        mail_subject= 'Thank you for your order'
-                        message=render_to_string('orders/order_recieved_email.html',{
+            mail_subject= 'Thank you for your order'
+            message=render_to_string('orders/order_recieved_email.html',{
                             'user':request.user,
                             'order':order,
 
                         })
-                        to_email=request.user.email
-                        send_email=EmailMessage(mail_subject,message,to=[to_email])
-                        send_email.send()
+            to_email=request.user.email
+            send_email=EmailMessage(mail_subject,message,to=[to_email])
+            send_email.send()
                     #send order number and transaction ie generation du recu de paiement
-                    data={
+            data={
                         'order_number':order.order_number,
                         'transID':payment.payment_id,
                     }
-
-                    return JsonResponse(data)
-            else:
-                return JsonResponse({'error': 'Order not found'}, status=400)
+            return JsonResponse(data)
         except ObjectDoesNotExist:
-            return JsonResponse({'error': 'Object does not exist'}, status=400)
-    return JsonResponse({'error': 'Invalid request'}, status=400)
-
-
+            pass
+    
 def place_order(request,total=0, quantity=0):
     current_user=request.user
     cart_items=CartItem.objects.filter(user=current_user)
@@ -141,6 +138,8 @@ def place_order(request,total=0, quantity=0):
         return redirect('checkout')
     
     
+
+
 def order_complete(request):
     order_number = request.GET.get('order_number')
     transID = request.GET.get('payment_id')
@@ -149,32 +148,23 @@ def order_complete(request):
         order = Order.objects.get(order_number=order_number, is_ordered=True)
         ordered_products = OrderProduct.objects.filter(order_id=order.id)
         
-        subtotal =0
+        subtotal = 0
         for i in ordered_products:
             subtotal += i.product_price * i.quantity
-
-        # Retrieve all payment objects with the given ID
-        payments = Payment.objects.filter(payment_id=transID)
-
-        if payments.count() == 0:
-            raise ObjectDoesNotExist("Payment with ID {} does not exist".format(transID))
-        elif payments.count() == 1:
-            # If there is only one payment object with the given ID, use it
-            payment = payments.first()
-        else:
-            # If there are multiple payment objects with the same ID, use the most recent one
-            payment = payments.latest('created_date')
+            # Utiliser filter() pour obtenir une liste de Payment
+        payments = Payment.objects.get(payment_id=transID)
 
         context = {
             'order': order,
             'ordered_products': ordered_products,
             'order_number': order.order_number,
-            'transID': payment.payment_id,
-            'payment':payment,
-            'subtotal':subtotal
+            'transID': payments.payment_id,
+            'payments': payments,
+            'subtotal': subtotal,
+          
         }
         return render(request, 'orders/order_complete.html', context)
-    except ObjectDoesNotExist:
+    except (Payment.DoesNotExist, Order.DoesNotExist):
         return redirect('home')
 
 
