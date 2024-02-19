@@ -16,150 +16,6 @@
         "documentation": {}
     },
     {
-        "label": "models",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "migrations",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "models",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "migrations",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "models",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "migrations",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "models",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "models",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "migrations",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "models",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "migrations",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "models",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "models",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "migrations",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "models",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "migrations",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "models",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "migrations",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
         "label": "migrations",
         "importPath": "django.db",
         "description": "django.db",
@@ -253,6 +109,263 @@
         "description": "django.db",
         "isExtraImport": true,
         "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "django.db.models.deletion",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "django.db.models.deletion",
+        "description": "django.db.models.deletion",
+        "detail": "django.db.models.deletion",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "importPath": "django.conf",
+        "description": "django.conf",
+        "isExtraImport": true,
+        "detail": "django.conf",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "importPath": "django.conf",
+        "description": "django.conf",
+        "isExtraImport": true,
+        "detail": "django.conf",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "importPath": "django.conf",
+        "description": "django.conf",
+        "isExtraImport": true,
+        "detail": "django.conf",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "importPath": "django.conf",
+        "description": "django.conf",
+        "isExtraImport": true,
+        "detail": "django.conf",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "importPath": "django.conf",
+        "description": "django.conf",
+        "isExtraImport": true,
+        "detail": "django.conf",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "importPath": "django.conf",
+        "description": "django.conf",
+        "isExtraImport": true,
+        "detail": "django.conf",
         "documentation": {}
     },
     {
@@ -333,6 +446,14 @@
         "description": "django.contrib.auth.admin",
         "isExtraImport": true,
         "detail": "django.contrib.auth.admin",
+        "documentation": {}
+    },
+    {
+        "label": "format_html",
+        "importPath": "django.utils.html",
+        "description": "django.utils.html",
+        "isExtraImport": true,
+        "detail": "django.utils.html",
         "documentation": {}
     },
     {
@@ -520,6 +641,14 @@
         "documentation": {}
     },
     {
+        "label": "get_object_or_404",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
         "label": "redirect",
         "importPath": "django.shortcuts",
         "description": "django.shortcuts",
@@ -577,6 +706,22 @@
     },
     {
         "label": "render",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "get_list_or_404",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "get_object_or_404",
         "importPath": "django.shortcuts",
         "description": "django.shortcuts",
         "isExtraImport": true,
@@ -640,11 +785,75 @@
         "documentation": {}
     },
     {
+        "label": "UserForm",
+        "importPath": "accounts.form",
+        "description": "accounts.form",
+        "isExtraImport": true,
+        "detail": "accounts.form",
+        "documentation": {}
+    },
+    {
+        "label": "UserProfileForm",
+        "importPath": "accounts.form",
+        "description": "accounts.form",
+        "isExtraImport": true,
+        "detail": "accounts.form",
+        "documentation": {}
+    },
+    {
         "label": "_cart_id",
         "importPath": "carts.views",
         "description": "carts.views",
         "isExtraImport": true,
         "detail": "carts.views",
+        "documentation": {}
+    },
+    {
+        "label": "Order",
+        "importPath": "orders.models",
+        "description": "orders.models",
+        "isExtraImport": true,
+        "detail": "orders.models",
+        "documentation": {}
+    },
+    {
+        "label": "OrderProduct",
+        "importPath": "orders.models",
+        "description": "orders.models",
+        "isExtraImport": true,
+        "detail": "orders.models",
+        "documentation": {}
+    },
+    {
+        "label": "Payment",
+        "importPath": "orders.models",
+        "description": "orders.models",
+        "isExtraImport": true,
+        "detail": "orders.models",
+        "documentation": {}
+    },
+    {
+        "label": "Order",
+        "importPath": "orders.models",
+        "description": "orders.models",
+        "isExtraImport": true,
+        "detail": "orders.models",
+        "documentation": {}
+    },
+    {
+        "label": "OrderProduct",
+        "importPath": "orders.models",
+        "description": "orders.models",
+        "isExtraImport": true,
+        "detail": "orders.models",
+        "documentation": {}
+    },
+    {
+        "label": "OrderProduct",
+        "importPath": "orders.models",
+        "description": "orders.models",
+        "isExtraImport": true,
+        "detail": "orders.models",
         "documentation": {}
     },
     {
@@ -817,55 +1026,6 @@
         "documentation": {}
     },
     {
-        "label": "django.db.models.deletion",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "django.db.models.deletion",
-        "description": "django.db.models.deletion",
-        "detail": "django.db.models.deletion",
-        "documentation": {}
-    },
-    {
-        "label": "settings",
-        "importPath": "django.conf",
-        "description": "django.conf",
-        "isExtraImport": true,
-        "detail": "django.conf",
-        "documentation": {}
-    },
-    {
-        "label": "settings",
-        "importPath": "django.conf",
-        "description": "django.conf",
-        "isExtraImport": true,
-        "detail": "django.conf",
-        "documentation": {}
-    },
-    {
-        "label": "settings",
-        "importPath": "django.conf",
-        "description": "django.conf",
-        "isExtraImport": true,
-        "detail": "django.conf",
-        "documentation": {}
-    },
-    {
-        "label": "settings",
-        "importPath": "django.conf",
-        "description": "django.conf",
-        "isExtraImport": true,
-        "detail": "django.conf",
-        "documentation": {}
-    },
-    {
-        "label": "settings",
-        "importPath": "django.conf",
-        "description": "django.conf",
-        "isExtraImport": true,
-        "detail": "django.conf",
-        "documentation": {}
-    },
-    {
         "label": "django.core.exceptions",
         "kind": 6,
         "isExtraImport": true,
@@ -924,6 +1084,14 @@
     },
     {
         "label": "Product",
+        "importPath": "store.models",
+        "description": "store.models",
+        "isExtraImport": true,
+        "detail": "store.models",
+        "documentation": {}
+    },
+    {
+        "label": "ReviewRating",
         "importPath": "store.models",
         "description": "store.models",
         "isExtraImport": true,
@@ -1036,38 +1204,6 @@
         "documentation": {}
     },
     {
-        "label": "Payment",
-        "importPath": "orders.models",
-        "description": "orders.models",
-        "isExtraImport": true,
-        "detail": "orders.models",
-        "documentation": {}
-    },
-    {
-        "label": "Order",
-        "importPath": "orders.models",
-        "description": "orders.models",
-        "isExtraImport": true,
-        "detail": "orders.models",
-        "documentation": {}
-    },
-    {
-        "label": "OrderProduct",
-        "importPath": "orders.models",
-        "description": "orders.models",
-        "isExtraImport": true,
-        "detail": "orders.models",
-        "documentation": {}
-    },
-    {
-        "label": "OrderProduct",
-        "importPath": "orders.models",
-        "description": "orders.models",
-        "isExtraImport": true,
-        "detail": "orders.models",
-        "documentation": {}
-    },
-    {
         "label": "datetime",
         "kind": 6,
         "isExtraImport": true,
@@ -1083,6 +1219,15 @@
         "importPath": "json",
         "description": "json",
         "detail": "json",
+        "documentation": {}
+    },
+    {
+        "label": "admin_thumbnails",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "admin_thumbnails",
+        "description": "admin_thumbnails",
+        "detail": "admin_thumbnails",
         "documentation": {}
     },
     {
@@ -1176,11 +1321,38 @@
         "documentation": {}
     },
     {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "accounts.migrations.0002_userprofile",
+        "description": "accounts.migrations.0002_userprofile",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('accounts', '0001_initial'),\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='UserProfile',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),\n                ('address_line_1', models.CharField(blank=True, max_length=100)),",
+        "detail": "accounts.migrations.0002_userprofile",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "accounts.migrations.0003_alter_userprofile_address_line_1_and_more",
+        "description": "accounts.migrations.0003_alter_userprofile_address_line_1_and_more",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('accounts', '0002_userprofile'),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='userprofile',\n            name='address_line_1',\n            field=models.CharField(blank=True, default=False, max_length=100),\n        ),",
+        "detail": "accounts.migrations.0003_alter_userprofile_address_line_1_and_more",
+        "documentation": {}
+    },
+    {
         "label": "AccountAdmin",
         "kind": 6,
         "importPath": "accounts.admin",
         "description": "accounts.admin",
-        "peekOfCode": "class AccountAdmin(UserAdmin):\n    list_display=('email','first_name','last_name','username','last_login','date_join','is_active')\n    list_display_links=('email','first_name','last_name')\n    readonly_fields=('last_login','date_join')\n    ordering=('-date_join',)\n    filter_horizontal=()\n    list_filter=()\n    fieldsets=()\nadmin.site.register(Accounts,AccountAdmin)",
+        "peekOfCode": "class AccountAdmin(UserAdmin):\n    list_display=('email','first_name','last_name','username','last_login','date_join','is_active')\n    list_display_links=('email','first_name','last_name')\n    readonly_fields=('last_login','date_join')\n    ordering=('-date_join',)\n    filter_horizontal=()\n    list_filter=()\n    fieldsets=()\nclass UserProfileAdmin(admin.ModelAdmin):\n    def thumbnail(self,object):",
+        "detail": "accounts.admin",
+        "documentation": {}
+    },
+    {
+        "label": "UserProfileAdmin",
+        "kind": 6,
+        "importPath": "accounts.admin",
+        "description": "accounts.admin",
+        "peekOfCode": "class UserProfileAdmin(admin.ModelAdmin):\n    def thumbnail(self,object):\n        return format_html('<img src=\"{}\" width=\"30\" style=\"border-radius:50%;\">'.format(object.profile_picture.url))\n    thumbnail.short_description='Profile Picture'\n    list_display=('thumbnail','user','city','state','country')\nadmin.site.register(Accounts,AccountAdmin)\nadmin.site.register(UserProfile,UserProfileAdmin)",
         "detail": "accounts.admin",
         "documentation": {}
     },
@@ -1203,6 +1375,24 @@
         "documentation": {}
     },
     {
+        "label": "UserForm",
+        "kind": 6,
+        "importPath": "accounts.form",
+        "description": "accounts.form",
+        "peekOfCode": "class UserForm(forms.ModelForm):\n        class Meta:\n            model = Accounts\n            fields = ('first_name','last_name','phone_number')\n        def __init__(self,*args,**kwargs):\n            super(UserForm,self).__init__(*args,**kwargs)\n            for field in self.fields:\n                self.fields[field].widget.attrs['class'] = 'form-control'\nclass UserProfileForm(forms.ModelForm):\n        profile_picture=forms.ImageField(required=False,error_messages={'invalid':(\"Image files only\")},widget=forms.FileInput)",
+        "detail": "accounts.form",
+        "documentation": {}
+    },
+    {
+        "label": "UserProfileForm",
+        "kind": 6,
+        "importPath": "accounts.form",
+        "description": "accounts.form",
+        "peekOfCode": "class UserProfileForm(forms.ModelForm):\n        profile_picture=forms.ImageField(required=False,error_messages={'invalid':(\"Image files only\")},widget=forms.FileInput)\n        class Meta:\n            model = UserProfile\n            fields=('address_line_1','address_line_2','city','state','country','profile_picture')\n        def __init__(self,*args,**kwargs):\n            super(UserProfileForm,self).__init__(*args,**kwargs)\n            for field in self.fields:\n                self.fields[field].widget.attrs['class'] = 'form-control'",
+        "detail": "accounts.form",
+        "documentation": {}
+    },
+    {
         "label": "MyAccountManager",
         "kind": 6,
         "importPath": "accounts.models",
@@ -1217,6 +1407,15 @@
         "importPath": "accounts.models",
         "description": "accounts.models",
         "peekOfCode": "class Accounts(AbstractBaseUser):\n    first_name=models.CharField(max_length=50)\n    last_name=models.CharField(max_length=50)\n    username=models.CharField(max_length=50, unique=True)\n    email=models.EmailField(max_length=100,unique=True)\n    phone_number=models.CharField(max_length=50)\n    date_join=models.DateTimeField(auto_now_add=True)\n    last_login=models.DateTimeField(auto_now_add=True)\n    is_admin=models.BooleanField(default=False)\n    is_staff=models.BooleanField(default=False)",
+        "detail": "accounts.models",
+        "documentation": {}
+    },
+    {
+        "label": "UserProfile",
+        "kind": 6,
+        "importPath": "accounts.models",
+        "description": "accounts.models",
+        "peekOfCode": "class UserProfile(models.Model):\n    user=models.OneToOneField(Accounts,on_delete=models.CASCADE)\n    address_line_1=models.CharField(max_length=100,blank=True,default=False)\n    address_line_2=models.CharField(max_length=100,blank=True,default=False)\n    profile_picture=models.ImageField(blank=True,upload_to='userprofile',default=False)\n    city=models.CharField(max_length=20,blank=True,default=False)\n    state=models.CharField(max_length=20,blank=True,default=False)\n    country=models.CharField(max_length=20,blank=True,default=False)\n    def __str__(self):\n        return self.user.first_name",
         "detail": "accounts.models",
         "documentation": {}
     },
@@ -1270,7 +1469,7 @@
         "kind": 2,
         "importPath": "accounts.views",
         "description": "accounts.views",
-        "peekOfCode": "def dashboard(request):\n    return render(request,'accounts/dashboard.html')\ndef forgotPassword(request):\n    if request.method=='POST':\n        email=request.POST['email']\n        if Accounts.objects.filter(email=email).exists():\n            user=Accounts.objects.get(email__exact=email)\n            #reset password email\n            current_site=get_current_site(request)\n            mail_subject= 'Reset your password'",
+        "peekOfCode": "def dashboard(request):\n    try:\n        userprofile = UserProfile.objects.get(user_id=request.user.id)\n    except UserProfile.DoesNotExist:\n        userprofile = None\n    orders = Order.objects.order_by('-created_at').filter(user_id=request.user.id, is_ordered=True)\n    order_count = orders.count()\n    context = {\n        'order_count': order_count,\n        'userprofile': userprofile",
         "detail": "accounts.views",
         "documentation": {}
     },
@@ -1298,6 +1497,42 @@
         "importPath": "accounts.views",
         "description": "accounts.views",
         "peekOfCode": "def resetPassword(request):\n    if request.method=='POST':\n        password=request.POST['password']\n        confirm_password=request.POST['confirm_password']\n        if password==confirm_password:\n            uid=request.session.get('uid')\n            user=Accounts.objects.get(pk=uid)\n            user.set_password(password)\n            user.save()\n            messages.success(request,'Password is reset successfully!!!!')",
+        "detail": "accounts.views",
+        "documentation": {}
+    },
+    {
+        "label": "my_orders",
+        "kind": 2,
+        "importPath": "accounts.views",
+        "description": "accounts.views",
+        "peekOfCode": "def my_orders(request):\n    orders=Order.objects.filter(user=request.user,is_ordered=True).order_by('-created_at')\n    path = request.path\n    context={\n        'orders':orders,\n        'path':path\n    }\n    return render(request,'accounts/my_orders.html',context,)\n@login_required(login_url='login')\ndef edit_profile(request):",
+        "detail": "accounts.views",
+        "documentation": {}
+    },
+    {
+        "label": "edit_profile",
+        "kind": 2,
+        "importPath": "accounts.views",
+        "description": "accounts.views",
+        "peekOfCode": "def edit_profile(request):\n    try:\n        userprofile = UserProfile.objects.get(user=request.user)\n    except UserProfile.DoesNotExist:\n        userprofile = UserProfile.objects.create(user=request.user)\n    if request.method == 'POST':\n        user_form = UserForm(request.POST, instance=request.user)\n        profile_form = UserProfileForm(request.POST, request.FILES, instance=userprofile)\n        if user_form.is_valid() and profile_form.is_valid():\n            user_form.save()",
+        "detail": "accounts.views",
+        "documentation": {}
+    },
+    {
+        "label": "change_password",
+        "kind": 2,
+        "importPath": "accounts.views",
+        "description": "accounts.views",
+        "peekOfCode": "def change_password(request):\n    if request.method =='POST':\n        current_password=request.POST['current_password']\n        new_password=request.POST['new_password']\n        confirm_new_password=request.POST['confirm_new_password']\n        user=Accounts.objects.get(username__exact=request.user.username)\n        if new_password == confirm_new_password:\n            success=user.check_password(current_password)\n            if success:\n                user.set_password(new_password)",
+        "detail": "accounts.views",
+        "documentation": {}
+    },
+    {
+        "label": "order_detail",
+        "kind": 2,
+        "importPath": "accounts.views",
+        "description": "accounts.views",
+        "peekOfCode": "def order_detail(request,order_id):\n    order_detail=OrderProduct.objects.filter(order__order_number=order_id)\n    order=Order.objects.get(order_number=order_id)\n    subtotal=0\n    for i in order_detail:\n        subtotal=i.product_price *i.quantity\n    context={\n        'order_detail':order_detail,\n        'order':order,\n        'subtotal':subtotal",
         "detail": "accounts.views",
         "documentation": {}
     },
@@ -1693,7 +1928,7 @@
         "kind": 2,
         "importPath": "e_commerce.views",
         "description": "e_commerce.views",
-        "peekOfCode": "def home(request):\n    products=Product.objects.all().filter(is_available=True)\n    context={\n        'products':products,\n    }\n    return render(request,'home.html',context)",
+        "peekOfCode": "def home(request):\n    products=Product.objects.all().filter(is_available=True).order_by('created_date')\n    for product in products:\n        reviews=ReviewRating.objects.filter(product_id=product.id,status=True)\n    context={\n        'products':products,\n        'reviews':reviews\n    }\n    return render(request,'home.html',context)",
         "detail": "e_commerce.views",
         "documentation": {}
     },
@@ -1801,7 +2036,7 @@
         "kind": 6,
         "importPath": "orders.models",
         "description": "orders.models",
-        "peekOfCode": "class Order(models.Model):\n    STATUS = (\n        ('New','New'),\n        ('Accepted','Accepted'),\n        ('Completed','Completed'),\n        ('Cancelled','Cancelled'),\n    )\n    user=models.ForeignKey(Accounts,on_delete=models.SET_NULL,null=True)\n    payment=models.ForeignKey(Payment,on_delete=models.SET_NULL,blank=True,null=True)\n    order_number=models.CharField(max_length=20)",
+        "peekOfCode": "class Order(models.Model):\n    STATUS = (\n        ('New','New'),\n        ('Accepted','Accepted'),\n        ('Completed','Completed'),\n        ('Cancelled','Cancelled'),\n    )\n    user=models.ForeignKey(Accounts,on_delete=models.SET_NULL,null=True)\n    payment = models.ForeignKey(Payment, on_delete=models.SET_NULL, null=True, blank=True)\n    order_number=models.CharField(max_length=20)",
         "detail": "orders.models",
         "documentation": {}
     },
@@ -1828,7 +2063,7 @@
         "kind": 2,
         "importPath": "orders.views",
         "description": "orders.views",
-        "peekOfCode": "def payments(request):\n    if request.method == \"POST\":\n        data = json.loads(request.body)\n        print(data)\n        try:\n            orders = Order.objects.filter(is_ordered=False)\n            if orders.exists():\n                for order in orders:\n                    payment = Payment(\n                        user=request.user,",
+        "peekOfCode": "def payments(request):\n    if request.method == \"POST\":\n        data = json.loads(request.body)\n        try:\n            orders = Order.objects.filter(is_ordered=False)\n            if orders.exists():\n                for order in orders:\n                    payment = Payment(\n                        user=request.user,\n                        payment_id=data['orderID'],",
         "detail": "orders.views",
         "documentation": {}
     },
@@ -1846,7 +2081,7 @@
         "kind": 2,
         "importPath": "orders.views",
         "description": "orders.views",
-        "peekOfCode": "def order_complete(request):\n    order_number = request.GET.get('order_number')\n    transID = request.GET.get('payment_id')\n    try:\n        order = Order.objects.get(order_number=order_number, is_ordered=True)\n        ordered_products = OrderProduct.objects.filter(order_id=order.id)\n        subtotal =0\n        for i in ordered_products:\n            subtotal += i.product_price * i.quantity\n        # Retrieve all payment objects with the given ID",
+        "peekOfCode": "def order_complete(request):\n    order_number = request.GET.get('order_number')\n    transID = request.GET.get('payment_id')\n    try:\n        order = Order.objects.get(order_number=order_number, is_ordered=True)\n        ordered_products = OrderProduct.objects.filter(order_id=order.id)\n        subtotal = 0\n        for i in ordered_products:\n            subtotal += i.product_price * i.quantity\n            # Utiliser filter() pour obtenir une liste de Payment",
         "detail": "orders.views",
         "documentation": {}
     },
@@ -1878,11 +2113,38 @@
         "documentation": {}
     },
     {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "store.migrations.0004_productgallery",
+        "description": "store.migrations.0004_productgallery",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('store', '0003_reviewrating'),\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='ProductGallery',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),\n                ('image', models.ImageField(max_length=255, upload_to='store/products')),",
+        "detail": "store.migrations.0004_productgallery",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "store.migrations.0005_alter_productgallery_options",
+        "description": "store.migrations.0005_alter_productgallery_options",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('store', '0004_productgallery'),\n    ]\n    operations = [\n        migrations.AlterModelOptions(\n            name='productgallery',\n            options={'verbose_name': 'productgallery', 'verbose_name_plural': 'product allery'},\n        ),\n    ]",
+        "detail": "store.migrations.0005_alter_productgallery_options",
+        "documentation": {}
+    },
+    {
+        "label": "ProductGalleryInline",
+        "kind": 6,
+        "importPath": "store.admin",
+        "description": "store.admin",
+        "peekOfCode": "class ProductGalleryInline(admin.TabularInline):\n    model=ProductGallery\n    extra=1\nclass ProductAdmin(admin.ModelAdmin):\n    list_display=('product_name','price','stock','category','modified_date','is_available')\n    prepopulated_fields ={'slug':('product_name',)}\n    inlines = [ProductGalleryInline]\nclass VariationAdmin(admin.ModelAdmin):\n    list_display=('product','variation_category','variation_value','is_active')\n    list_editable=('is_active',)#ca c'est juste pour modifier la case de is_active te le mettre en un petit caree",
+        "detail": "store.admin",
+        "documentation": {}
+    },
+    {
         "label": "ProductAdmin",
         "kind": 6,
         "importPath": "store.admin",
         "description": "store.admin",
-        "peekOfCode": "class ProductAdmin(admin.ModelAdmin):\n    list_display=('product_name','price','stock','category','modified_date','is_available')\n    prepopulated_fields ={'slug':('product_name',)}\nclass VariationAdmin(admin.ModelAdmin):\n    list_display=('product','variation_category','variation_value','is_active')\n    list_editable=('is_active',)#ca c'est juste pour modifier la case de is_active te le mettre en un petit caree\n    list_filter = ('product','variation_category','variation_value')\nadmin.site.register(Product,ProductAdmin)\nadmin.site.register(Variation,VariationAdmin)\nadmin.site.register(ReviewRating)",
+        "peekOfCode": "class ProductAdmin(admin.ModelAdmin):\n    list_display=('product_name','price','stock','category','modified_date','is_available')\n    prepopulated_fields ={'slug':('product_name',)}\n    inlines = [ProductGalleryInline]\nclass VariationAdmin(admin.ModelAdmin):\n    list_display=('product','variation_category','variation_value','is_active')\n    list_editable=('is_active',)#ca c'est juste pour modifier la case de is_active te le mettre en un petit caree\n    list_filter = ('product','variation_category','variation_value')\nadmin.site.register(Product,ProductAdmin)\nadmin.site.register(Variation,VariationAdmin)",
         "detail": "store.admin",
         "documentation": {}
     },
@@ -1891,7 +2153,7 @@
         "kind": 6,
         "importPath": "store.admin",
         "description": "store.admin",
-        "peekOfCode": "class VariationAdmin(admin.ModelAdmin):\n    list_display=('product','variation_category','variation_value','is_active')\n    list_editable=('is_active',)#ca c'est juste pour modifier la case de is_active te le mettre en un petit caree\n    list_filter = ('product','variation_category','variation_value')\nadmin.site.register(Product,ProductAdmin)\nadmin.site.register(Variation,VariationAdmin)\nadmin.site.register(ReviewRating)",
+        "peekOfCode": "class VariationAdmin(admin.ModelAdmin):\n    list_display=('product','variation_category','variation_value','is_active')\n    list_editable=('is_active',)#ca c'est juste pour modifier la case de is_active te le mettre en un petit caree\n    list_filter = ('product','variation_category','variation_value')\nadmin.site.register(Product,ProductAdmin)\nadmin.site.register(Variation,VariationAdmin)\nadmin.site.register(ReviewRating)\nadmin.site.register(ProductGallery)",
         "detail": "store.admin",
         "documentation": {}
     },
@@ -1950,6 +2212,15 @@
         "documentation": {}
     },
     {
+        "label": "ProductGallery",
+        "kind": 6,
+        "importPath": "store.models",
+        "description": "store.models",
+        "peekOfCode": "class ProductGallery(models.Model):\n    product=models.ForeignKey(Product,default=None,on_delete=models.CASCADE)\n    image=models.ImageField(upload_to='store/products',max_length=255)\n    def __str__(self):\n        return self.product.product_name\n    class Meta:\n        verbose_name = 'productgallery'\n        verbose_name_plural = 'product allery'",
+        "detail": "store.models",
+        "documentation": {}
+    },
+    {
         "label": "urlpatterns",
         "kind": 5,
         "importPath": "store.urls",
@@ -1963,7 +2234,7 @@
         "kind": 2,
         "importPath": "store.views",
         "description": "store.views",
-        "peekOfCode": "def store(request,category_slug=None):\n    categories=None,\n    products=None\n    if  category_slug !=None:\n        categories= get_object_or_404(category,slug=category_slug)\n        products=Product.objects.filter(category=categories,is_available=True)\n        paginator = Paginator(products,1)#le nombre de pages ou je veux que mon produit puisse s'afficher\n        page=request.GET.get('page')\n        paged_products=paginator.get_page(page)\n        product_count = products.count()",
+        "peekOfCode": "def store(request,category_slug=None):\n    categories=None,\n    products=None\n    if  category_slug !=None:\n        categories= get_object_or_404(category,slug=category_slug)\n        products=Product.objects.filter(category=categories,is_available=True)\n        paginator = Paginator(products,9)#le nombre de pages ou je veux que mon produit puisse s'afficher\n        page=request.GET.get('page')\n        paged_products=paginator.get_page(page)\n        product_count = products.count()",
         "detail": "store.views",
         "documentation": {}
     },
@@ -1972,7 +2243,7 @@
         "kind": 2,
         "importPath": "store.views",
         "description": "store.views",
-        "peekOfCode": "def product_detail(request,category_slug,product_slug):\n    try:\n        single_product = Product.objects.get(category__slug=category_slug,slug=product_slug)#dans produit je dois recuperer le slug se trouvant dans categorie\n        in_cart=CartItem.objects.filter(cart__cart_id=_cart_id(request),product=single_product).exists()\n    except Exception as e:\n        raise e\n    # try:\n    #     orderproduct=OrderProduct.objects.filter(user=request.user,product_id=single_product.id).exists()\n    # except OrderProduct.DoesNotExist:\n    #     orderproduct=None a revoirunpeu plus tard",
+        "peekOfCode": "def product_detail(request,category_slug,product_slug):\n    try:\n        single_product = Product.objects.get(category__slug=category_slug,slug=product_slug)#dans produit je dois recuperer le slug se trouvant dans categorie\n        in_cart=CartItem.objects.filter(cart__cart_id=_cart_id(request),product=single_product).exists()\n    except Exception as e:\n        raise e\n    if request.user.is_authenticated:\n        try:\n            orderproduct=OrderProduct.objects.filter(user=request.user,product_id=single_product.id).exists()\n        except OrderProduct.DoesNotExist:",
         "detail": "store.views",
         "documentation": {}
     },
