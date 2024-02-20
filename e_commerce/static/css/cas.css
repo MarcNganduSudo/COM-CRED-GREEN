@@ -1,0 +1,106 @@
+.rate > input{
+    display: none;
+}
+.rate{
+    display: inline-block;
+    border: 0;
+}
+.rate > label{
+    float: right;
+}
+
+.rate > label:before{
+    display: inline-block;
+    font-size: 1.1rem;
+    font-family: fontAwesome;
+    content :"\f005";
+    margin: 0;
+    padding: 0.3rem .2rem;
+    cursor: pointer;
+}
+
+.rate .half:before{
+    content:"\f089";
+    position:absolute;
+    padding-right: 0;
+}
+
+/* annimation sur les etoiles */
+input:checked ~ label,label:hover ~label{
+    color:#ffb503;
+}
+
+input:checked + label:hover,input:checked ~ label:hover,input:checked ~label:hover~label,
+label:hover ~ input:checked ~label{
+    color:#cc9000;
+}
+
+.rating-star i{
+    color:#ffb503 !important;
+}
+ul.thumb{
+    margin: 0 auto;
+    padding: 0;
+    float: left;
+}
+ul.thumb li{
+    list-style: none;
+    margin: 10px;
+}
+ul.thumb li img{
+    width: 80px;
+    height: 80px;
+    border: 1px solid grey;
+}
+@import url('https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css');
+
+/* Personnalisation des éléments */
+
+.navbar {
+    padding: 0.75rem 1rem;
+    transition: all 0.3s ease;
+}
+
+.navbar a {
+    color: #212529 !important;
+    text-decoration: none;
+}
+
+.navbar .navbar-nav .nav-link {
+    padding: 0.75rem 1rem;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: inherit;
+    border-radius: 0.25rem;
+}
+
+.navbar .navbar-nav .show > .nav-link,
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .nav-link:focus {
+    color: #0d6efd;
+    background-color: transparent;
+}
+
+[data-toggle="collapse"]:focus,
+[aria-expanded="true"][data-toggle="collapse"] {
+    outline: 0;
+}
+
+.dropdown-menu {
+    min-width: 10rem;
+}
+
+.dropdown-menu a {
+    padding: 0.5rem 1rem;
+}
+
+.dropdown-menu a:hover {
+    background-color: rgba(13, 110, 253, 0.1);
+}
+
+/* Fin de la personnalisation */
+
+#navbarTop4 {
+    max-height: calc(100vh - 60px); /* Adjustez cette valeur si nécessaire */
+    overflow-y: auto;
+}

@@ -2234,7 +2234,7 @@
         "kind": 2,
         "importPath": "store.views",
         "description": "store.views",
-        "peekOfCode": "def store(request,category_slug=None):\n    categories=None,\n    products=None\n    if  category_slug !=None:\n        categories= get_object_or_404(category,slug=category_slug)\n        products=Product.objects.filter(category=categories,is_available=True)\n        paginator = Paginator(products,9)#le nombre de pages ou je veux que mon produit puisse s'afficher\n        page=request.GET.get('page')\n        paged_products=paginator.get_page(page)\n        product_count = products.count()",
+        "peekOfCode": "def store(request,category_slug=None):\n    categories=None,\n    products=None\n    if  category_slug !=None:\n        categories= get_object_or_404(category,slug=category_slug)\n        products=Product.objects.filter(category=categories,is_available=True)\n        paginator = Paginator(products,12)#le nombre de pages ou je veux que mon produit puisse s'afficher\n        page=request.GET.get('page')\n        paged_products=paginator.get_page(page)\n        product_count = products.count()",
         "detail": "store.views",
         "documentation": {}
     },
