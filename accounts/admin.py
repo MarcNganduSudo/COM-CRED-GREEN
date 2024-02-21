@@ -1,7 +1,8 @@
 from django.contrib import admin
 from django.contrib.auth.admin import UserAdmin
-from .models import Accounts,UserProfile
+from .models import Accounts,UserProfile,Shop
 from django.utils.html import format_html
+
 
 # Register your models here.
 #nous voulons le mettre sous forme de liste et de mettre lapossibilite de faire une recherche de compte
@@ -23,3 +24,7 @@ class UserProfileAdmin(admin.ModelAdmin):
     
 admin.site.register(Accounts,AccountAdmin)
 admin.site.register(UserProfile,UserProfileAdmin)
+
+
+    
+admin.site.register(Shop)

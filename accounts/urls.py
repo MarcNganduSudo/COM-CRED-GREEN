@@ -15,5 +15,7 @@ urlpatterns = [
     path('accounts/my_orders/',views.my_orders,name="my_orders"),
     path('accounts/edit_profile/',views.edit_profile,name="edit_profile"),
     path('accounts/change_password/',views.change_password,name="change_password"),
-    path('accounts/order_detail/<int:order_id>/',views.order_detail,name="order_detail")
+    path('accounts/order_detail/<int:order_id>/',views.order_detail,name="order_detail"),
+    path('accounts/us/',views.us,name="us"),
+    path('accounts/shop/<slug:shop_slug>/',views.shop,name="shop")
 ]

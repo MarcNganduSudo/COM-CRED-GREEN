@@ -2,7 +2,7 @@ from django.shortcuts import get_object_or_404, redirect, render
 from accounts.form import RegistrationsForm,UserForm,UserProfileForm
 from carts.views import _cart_id
 from orders.models import Order, OrderProduct
-from .models import Accounts, UserProfile
+from .models import Accounts, Shop, UserProfile
 from django.contrib import messages,auth
 from django.contrib.auth.decorators import login_required
 from django.http import HttpResponse
@@ -299,3 +299,13 @@ def order_detail(request,order_id):
         'subtotal':subtotal
     }
     return render(request,'accounts/order_detail.html',context)
+
+def us(request):
+    return render(request,'accounts/us.html')
+
+def shop(request):
+    shop=Shop.objects.all()
+    context={
+        'shop':shop
+    }
+    return render(request,'accounts/shop.html',context)
