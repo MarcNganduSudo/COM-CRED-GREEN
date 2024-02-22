@@ -90,4 +90,10 @@ class ProductGallery(models.Model):
         verbose_name = 'productgallery'
         verbose_name_plural = 'product allery'
     
+class Shop(models.Model):
+    name = models.CharField(max_length=50, blank=True)
+    description_block2_4 = models.TextField()
+    def get_absolute_url(self):
+        return reverse('shop_detail', args=[str(self.id)])
+
     

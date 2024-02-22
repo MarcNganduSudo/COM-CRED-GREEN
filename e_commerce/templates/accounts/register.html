@@ -1,13 +1,150 @@
 {% extends 'base.html' %}
-
+{% load static %}
 {% block content %}
+<style>
+	.c1{
+		padding: 1rem; /* Ajoutez un espace entre l'image et le conteneur */
+		border: 0px solid white; /* Augmentez la largeur du bord */
+		border-radius: 80px; /* Conservez la forme arrondie existante */
+		height: 85vh;
+	}
+	.carousel-item img {
+		filter: brightness(70%); /* Ajustez la valeur pour obtenir l'effet souhaité */
+	  }
+	  
+	.carousel-caption h1,
+	.carousel-caption p {
+	white-space: nowrap;
+	}
+	.carousel-caption p {
+		margin: 0; /* Remove default paragraph margins */
+	  }
+	  .carousel-caption .txt1{
+		font-size: 2rem;
+		color: #fff;
+		font-weight: bold;
+		text-transform: uppercase;
+		letter-spacing: 5px;
+		animation-name: moveInToLeft;
+		animation-duration: 2s;
+		animation-timing-function: ease-in-out;
+		margin-bottom: 10px;
+	}
+	
+	@keyframes moveInToLeft{
+		0%{
+			opacity:0;
+			transform: translate(-100px);
+		}
+		80%{
+			transform: translate(20px);
+		}
+		100%{
+			opacity:1;
+			transform: translate(0);
+		}
+	}
+.carousel-caption p{
+	font-size: 2rem;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    animation-name: moveInToRight;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    margin-bottom: 10px;
+}
 
+@keyframes moveInToRight{
+    0%{
+        opacity:0;
+        transform: translate(100px);
+    }
+    80%{
+        transform: translate(-20px);
+    }
+    100%{
+        opacity:1;
+        transform: translate(0);
+    }
+}
+/* fin animation */
+.carousel-caption b{
+	font-size: 2rem;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    animation-name: moveInToRight;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    margin-bottom: 10px;
+}
 
-<!-- ========================= SECTION CONTENT ========================= -->
+@keyframes moveInToRight{
+    0%{
+        opacity:0;
+        transform: translate(100px);
+    }
+    80%{
+        transform: translate(-20px);
+    }
+    100%{
+        opacity:1;
+        transform: translate(0);
+    }
+}
+/* fin animation */
+	ul.list-group {
+		max-height: 487px;
+		overflow-y: auto;
+	  }
+	  
+	  ul.list-group::-webkit-scrollbar {
+		width: 0.5em;
+	  }
+	  
+	  ul.list-group::-webkit-scrollbar-track {
+		background-color: transparent; /* Rendre la piste de défilement transparente */
+	  }
+	  
+	  ul.list-group::-webkit-scrollbar-thumb {
+		background-color: #c7c0c0; /* Couleur de la poignée de défilement */
+	  }
+	  
+	  /* Cacher la barre de défilement lorsqu'elle n'est pas utilisée */
+	  ul.list-group::-webkit-scrollbar-thumb:vertical {
+		height: 0;
+	  }
+	  
+	  /* Cacher la barre de défilement lorsqu'elle n'est pas utilisée */
+	  ul.list-group::-webkit-scrollbar-thumb:horizontal {
+		width: 0;
+	  }
+</style>
+<div class="container-fluid">
+    <div class="row mx-5">
+        <div class="col-6">
+        <div id="carouselExampleIndicators" class="carousel slide">
+            <div class="carousel-inner">
+              <div class="carousel-item active ">
+                <img class="c1 d-block w-100" src="{% static 'images/log2.jpg'%}" class="img-fluid d-block align-self-stretch" style="height: 700px; width: 100%;" alt="Image description" alt="First slide">
+                <div class="carousel-caption d-flex flex-column justify-content-center align-items-center px-3 py-5 text-center" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+                  <h1 class=" txt1 text-light font-weight-bold mb-3" style="font-size: 3rem; display: inline-block;">Don't miss amazing</h1>
+                  <h1 class=" txt1 text-light font-weight-bold mb-3" style="font-size: 2rem; display: inline-block;">grocery deals</h1>
+                  <p class="mb-5 signup_line">Sign up for our daily newsletter</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-6">
+            <!-- ========================= SECTION CONTENT ========================= -->
 <section class="section-content padding-y">
 
     <!-- ============================ COMPONENT REGISTER   ================================= -->
-        <div class="card mx-auto" style="max-width:520px; margin-top:40px;">
+        <div class="card mx-auto" style="max-width:720px; margin-top:40px;">
           <article class="card-body">
             {% include "includes/alerts.html" %}
             <header class="mb-4"><h4 class="card-title">Sign up</h4></header>
@@ -59,6 +196,11 @@
     
     </section>
     <!-- ========================= SECTION CONTENT END// ========================= -->
+        </div>
+    </div>
+</div>
+
+
 
     
 {% endblock %}

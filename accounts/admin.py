@@ -1,6 +1,6 @@
 from django.contrib import admin
 from django.contrib.auth.admin import UserAdmin
-from .models import Accounts,UserProfile,Shop
+from .models import Accounts,UserProfile
 from django.utils.html import format_html
 
 
@@ -23,8 +23,4 @@ class UserProfileAdmin(admin.ModelAdmin):
     list_display=('thumbnail','user','city','state','country')
     
 admin.site.register(Accounts,AccountAdmin)
-admin.site.register(UserProfile,UserProfileAdmin)
-
-
-    
-admin.site.register(Shop)
+admin.site.register(UserProfile,UserProfileAdmin)    

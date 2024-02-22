@@ -8,7 +8,8 @@ def home(request):
         reviews=ReviewRating.objects.filter(product_id=product.id,status=True)
     context={
         'products':products,
-        'reviews':reviews
+        'reviews':reviews,
+        
     }
     return render(request,'home.html',context)
 

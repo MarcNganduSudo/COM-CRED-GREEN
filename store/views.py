@@ -2,7 +2,7 @@ from django.shortcuts import get_object_or_404, render
 
 from carts.models import CartItem
 from orders.models import OrderProduct
-from .models import Product, ProductGallery, ReviewRating
+from .models import Product, ProductGallery, ReviewRating, Shop
 from category.models import category
 from carts.views  import _cart_id
 from django.core.paginator import EmptyPage,PageNotAnInteger,Paginator
@@ -61,7 +61,6 @@ def product_detail(request,category_slug,product_slug):
     
     product_gallery=ProductGallery.objects.filter(product_id=single_product.id)
     
-    
     context={
         'single_product':single_product,
         'in_cart':in_cart,
@@ -107,4 +106,13 @@ def submit_review(request, product_id):
                 data.save()
                 messages.success(request,'Thank you your review has been submitted!!')
                 return redirect(url)
-        
+            
+def shop(request):
+    shops = Shop.objects.all()
+    context = {
+        'shops': shops
+    }
+    return render(request, 'accounts/shop.html', context)
+
+
+    

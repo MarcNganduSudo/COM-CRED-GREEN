@@ -85,21 +85,6 @@ class UserProfile(models.Model):
     def __str__(self):
         return f'{self.address_line_1}{self.address_line_2}' 
     
-
-class Shop(models.Model):
-    photo1 = models.ImageField(upload_to='photo/categories',blank=True)
-    photo2 = models.ImageField(upload_to='photo/categories',blank=True)
-    name = models.CharField(max_length=50, blank=True)
-    sub_name = models.CharField(max_length=255, blank=True)
-    description1 = models.TextField()
-    description_block1_2 = models.TextField()
-    description_block2_2 = models.TextField()
-    description_block3 = models.TextField()
-    description_block1_4 = models.TextField()
-    description_block2_4 = models.TextField()
-    def get_url(self):
-        # dans reverse il y aura le name qu'on a utiliser pour faire la recherche de category dans store.urls'
-        return reverse('shop_by_account',args=[self.slug])
         
 
     

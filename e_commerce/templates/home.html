@@ -131,25 +131,12 @@
 		<div class="col-2 py-2">
 			<div class="card" style="width: 18rem; border:3px solid rgb(235, 225, 225)">
 				<div class="card-header bg-primary" style="color: white; max-height: 600px; overflow-y: auto;">
-				  Featured
+				  All Category
 				</div>
 				<ul class="list-group list-group-flush" style="max-height: 620px; overflow-y: auto;">
-				  <li class="list-group-item"><a href="{% url 'store'%}">All product</a></li>
-				  <li class="list-group-item"><a href="{% url 'store'%}">All product</a></li>
-				  <li class="list-group-item"><a href="{{ category.get_url }}">Category</a></li>
-				  <li class="list-group-item"><a href="{% url 'store'%}">All product</a></li>
-				  <li class="list-group-item"><a href="{% url 'store'%}">All product</a></li>
-				  <li class="list-group-item"><a href="{% url 'store'%}">All product</a></li>
-				  <li class="list-group-item"><a href="{% url 'store'%}">All product</a></li>
-				  <li class="list-group-item"><a href="{% url 'store'%}">All product</a></li>
-				  <li class="list-group-item"><a href="{% url 'store'%}">All product</a></li>
-				  <li class="list-group-item"><a href="{% url 'store'%}">All product</a></li>
-				  <li class="list-group-item"><a href="{% url 'store'%}">All product</a></li>
-				  <li class="list-group-item"><a href="{% url 'store'%}">All product</a></li>
-				  <li class="list-group-item"><a href="{% url 'store'%}">All product</a></li>
-				  <li class="list-group-item"><a href="{% url 'store'%}">All product</a></li>
-				  <li class="list-group-item"><a href="{% url 'store'%}">All product</a></li>
-  
+					{% for category in links %}
+				<li class="list-group-item"><a href="{{ category.get_url }}">{{category.category_name}}</a></li>
+					{% endfor %}
 				</ul>
 			  </div>
 		  </div>
@@ -162,7 +149,7 @@
 					<h1 class=" txt1 text-light font-weight-bold mb-3" style="font-size: 5rem; display: inline-block;">Don't miss amazing</h1>
 					<h1 class=" txt1 text-light font-weight-bold mb-3" style="font-size: 3rem; display: inline-block;">grocery deals</h1>
 					<p class="mb-5 signup_line">Sign up for our daily newsletter</p>
-					<button class="btn btn-primary btn-lg">Subscribe</button>
+					<a class="btn btn-primary" href="{%url 'register' %}">Subscribe</a>
 				  </div>
 				</div>
 				<div class="carousel-item ">
@@ -171,7 +158,7 @@
 					  <h1 class=" txt1 text-light font-weight-bold mb-3" style="font-size: 5rem; display: inline-block;">Don't miss amazing</h1>
 					  <h1 class=" txt1 text-light font-weight-bold mb-3" style="font-size: 3rem; display: inline-block;">grocery deals</h1>
 					  <p class="text-light mb-5" style="font-size: 1.5rem; display: inline-block;">Sign up for our daily newsletter</p>
-					  <button class="btn btn-primary btn-lg">Subscribe</button>
+					  <a class="btn btn-primary" href="{%url 'register' %}">Subscribe</a>
 					</div>
 				  </div>
 				<div class="carousel-item ">
@@ -180,7 +167,7 @@
 					  <h1 class=" txt1 text-light font-weight-bold mb-3" style="font-size: 5rem; display: inline-block;">Don't miss amazing</h1>
 					  <h1 class=" txt1 text-light font-weight-bold mb-3" style="font-size: 3rem; display: inline-block;">grocery deals</h1>
 					  <p class="text-light mb-5" style="font-size: 1.5rem; display: inline-block;">Sign up for our daily newsletter</p>
-					  <button class="btn btn-primary btn-lg">Subscribe</button>
+					  <a class="btn btn-primary" href="{%url 'register' %}">Subscribe</a>
 					</div>
 				  </div>
 				<div class="carousel-item ">
@@ -189,7 +176,7 @@
 					<h1 class=" txt1 text-light font-weight-bold mb-3" style="font-size: 5rem; display: inline-block;">Don't miss amazing</h1>
 					<h1 class=" txt1 text-light font-weight-bold mb-3" style="font-size: 3rem; display: inline-block;">grocery deals</h1>
 					<p class="text-light mb-5" style="font-size: 1.5rem; display: inline-block;">Sign up for our daily newsletter</p>
-					<button class="btn btn-primary btn-lg">Subscribe</button>
+					<a class="btn btn-primary" href="{%url 'register' %}">Subscribe</a>
 				  </div>
 				</div>
 				<div class="carousel-item ">
@@ -198,7 +185,7 @@
 					  <h1 class=" txt1 text-light font-weight-bold mb-3" style="font-size: 5rem; display: inline-block;">Don't miss amazing</h1>
 					  <h1 class=" txt1 text-light font-weight-bold mb-3" style="font-size: 3rem; display: inline-block;">grocery deals</h1>
 					  <p class="text-light mb-5" style="font-size: 1.5rem; display: inline-block;">Sign up for our daily newsletter</p>
-					  <button class="btn btn-primary btn-lg">Subscribe</button>
+					  <a class="btn btn-primary" href="{%url 'register' %}">Subscribe</a>
 					</div>
 				  </div>
 				<div class="carousel-item ">
@@ -207,7 +194,7 @@
 					<h1 class=" txt1 text-light font-weight-bold mb-3" style="font-size: 5rem; display: inline-block;">Don't miss amazing</h1>
 					<h1 class=" txt1 text-light font-weight-bold mb-3" style="font-size: 3rem; display: inline-block;">grocery deals</h1>
 					<p class="text-light mb-5" style="font-size: 1.5rem; display: inline-block;">Sign up for our daily newsletter</p>
-					<button class="b btn btn-primary btn-lg">Subscribe</button>
+					<a class="btn btn-primary" href="{%url 'register' %}">Subscribe</a>
 				  </div>
 				</div>
 				  <div class="carousel-item ">
@@ -216,7 +203,7 @@
 					  <h1 class=" txt1 text-light font-weight-bold mb-3" style="font-size: 5rem; display: inline-block;">Don't miss amazing</h1>
 					  <h1 class=" txt1 text-light font-weight-bold mb-3" style="font-size: 3rem; display: inline-block;">grocery deals</h1>
 					  <p class="text-light mb-5" style="font-size: 1.5rem; display: inline-block;">Sign up for our daily newsletter</p>
-					  <button class="btn btn-primary btn-lg">Subscribe</button>
+					  <a class="btn btn-primary" href="{%url 'register' %}">Subscribe</a>
 					</div>
 				  </div>
 				  <div class="carousel-item ">
@@ -225,7 +212,7 @@
 					  <h1 class=" txt1 text-light font-weight-bold mb-3" style="font-size: 5rem; display: inline-block;">Don't miss amazing</h1>
 					  <h1 class=" txt1 text-light font-weight-bold mb-3" style="font-size: 3rem; display: inline-block;">grocery deals</h1>
 					  <p class="text-light mb-5" style="font-size: 1.5rem; display: inline-block;">Sign up for our daily newsletter</p>
-					  <button class="btn btn-primary btn-lg">Subscribe</button>
+					  	<a class="btn btn-primary" href="{%url 'register' %}">Subscribe</a>
 					</div>
 				  </div>
 			  </div>
@@ -247,7 +234,7 @@
 				  <li class="list-group-item"><a href="{% url 'store'%}">All product</a></li>
 				  <li class="list-group-item"><a href="{% url 'store'%}">All product</a></li>
 				  <li class="list-group-item"><a href="{{ category.get_url }}">Category</a></li>
-				  <li class="list-group-item"><a href="{% url 'store'%}">All product</a></li>
+				  <li class="list-group-item"><a href="{% url 'store'%}">{{category.product_name}}</a></li>
 				  <li class="list-group-item"><a href="{% url 'store'%}">All product</a></li>
 				  <li class="list-group-item"><a href="{% url 'store'%}">All product</a></li>
 				  <li class="list-group-item"><a href="{% url 'store'%}">All product</a></li>

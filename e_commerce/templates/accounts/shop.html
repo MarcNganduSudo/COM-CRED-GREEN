@@ -47,6 +47,9 @@
 		margin-bottom: 10px;
 	}
 	
+    
+        
+
 	@keyframes moveInToLeft{
 		0%{
 			opacity:0;
@@ -315,6 +318,19 @@
             </div>
         </div>
     </div>
+    <div class="container-fluid mt-5 mb-5" style="width: 100%;">
+        <h1 style="text-align: center;">OUR SHOPS</h1>
+        <div class="row border border-5 rounded-top mx-5 d-flex flex-nowrap" style="overflow-x: auto; height: 450px;">
+            {% for shop in shops %}
+            <div class="col-3 border border-5 border-radius rounded mx-2 mt-2 mb-2">
+                <h1 class="text-success"style="text-align: center;">{{ shop.name }}</h1>
+                <p>{{ shop.description_block2_4 }}</p>
+            </div>
+            {% endfor %}
+            <!-- Ajoutez plus d'éléments .col-3 si nécessaire -->
+        </div>
+    </div>
+</div>
 </div>
 
 				

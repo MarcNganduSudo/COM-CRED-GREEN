@@ -48,54 +48,6 @@
         "documentation": {}
     },
     {
-        "label": "migrations",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "models",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "migrations",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "models",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "migrations",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "models",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
         "label": "models",
         "importPath": "django.db",
         "description": "django.db",
@@ -321,6 +273,30 @@
     },
     {
         "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
         "importPath": "django.db",
         "description": "django.db",
         "isExtraImport": true,
@@ -1395,33 +1371,6 @@
         "documentation": {}
     },
     {
-        "label": "Migration",
-        "kind": 6,
-        "importPath": "accounts.migrations.0004_shop",
-        "description": "accounts.migrations.0004_shop",
-        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('accounts', '0003_alter_userprofile_address_line_1_and_more'),\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='Shop',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),\n                ('photo1', models.ImageField(blank=True, default=False, upload_to='userprofile')),",
-        "detail": "accounts.migrations.0004_shop",
-        "documentation": {}
-    },
-    {
-        "label": "Migration",
-        "kind": 6,
-        "importPath": "accounts.migrations.0005_alter_shop_photo1_alter_shop_photo2",
-        "description": "accounts.migrations.0005_alter_shop_photo1_alter_shop_photo2",
-        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('accounts', '0004_shop'),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='shop',\n            name='photo1',\n            field=models.ImageField(blank=True, upload_to='photo/categories'),\n        ),",
-        "detail": "accounts.migrations.0005_alter_shop_photo1_alter_shop_photo2",
-        "documentation": {}
-    },
-    {
-        "label": "Migration",
-        "kind": 6,
-        "importPath": "accounts.migrations.0006_alter_shop_description1_and_more",
-        "description": "accounts.migrations.0006_alter_shop_description1_and_more",
-        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('accounts', '0005_alter_shop_photo1_alter_shop_photo2'),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='shop',\n            name='description1',\n            field=models.TextField(),\n        ),",
-        "detail": "accounts.migrations.0006_alter_shop_description1_and_more",
-        "documentation": {}
-    },
-    {
         "label": "AccountAdmin",
         "kind": 6,
         "importPath": "accounts.admin",
@@ -1435,7 +1384,7 @@
         "kind": 6,
         "importPath": "accounts.admin",
         "description": "accounts.admin",
-        "peekOfCode": "class UserProfileAdmin(admin.ModelAdmin):\n    def thumbnail(self,object):\n        return format_html('<img src=\"{}\" width=\"30\" style=\"border-radius:50%;\">'.format(object.profile_picture.url))\n    thumbnail.short_description='Profile Picture'\n    list_display=('thumbnail','user','city','state','country')\nadmin.site.register(Accounts,AccountAdmin)\nadmin.site.register(UserProfile,UserProfileAdmin)\nadmin.site.register(Shop)",
+        "peekOfCode": "class UserProfileAdmin(admin.ModelAdmin):\n    def thumbnail(self,object):\n        return format_html('<img src=\"{}\" width=\"30\" style=\"border-radius:50%;\">'.format(object.profile_picture.url))\n    thumbnail.short_description='Profile Picture'\n    list_display=('thumbnail','user','city','state','country')\nadmin.site.register(Accounts,AccountAdmin)\nadmin.site.register(UserProfile,UserProfileAdmin)",
         "detail": "accounts.admin",
         "documentation": {}
     },
@@ -1499,15 +1448,6 @@
         "importPath": "accounts.models",
         "description": "accounts.models",
         "peekOfCode": "class UserProfile(models.Model):\n    user=models.OneToOneField(Accounts,on_delete=models.CASCADE)\n    address_line_1=models.CharField(max_length=100,blank=True,default=False)\n    address_line_2=models.CharField(max_length=100,blank=True,default=False)\n    profile_picture=models.ImageField(blank=True,upload_to='userprofile',default=False)\n    city=models.CharField(max_length=20,blank=True,default=False)\n    state=models.CharField(max_length=20,blank=True,default=False)\n    country=models.CharField(max_length=20,blank=True,default=False)\n    def __str__(self):\n        return self.user.first_name",
-        "detail": "accounts.models",
-        "documentation": {}
-    },
-    {
-        "label": "Shop",
-        "kind": 6,
-        "importPath": "accounts.models",
-        "description": "accounts.models",
-        "peekOfCode": "class Shop(models.Model):\n    photo1 = models.ImageField(upload_to='photo/categories',blank=True)\n    photo2 = models.ImageField(upload_to='photo/categories',blank=True)\n    name = models.CharField(max_length=50, blank=True)\n    sub_name = models.CharField(max_length=255, blank=True)\n    description1 = models.TextField()\n    description_block1_2 = models.TextField()\n    description_block2_2 = models.TextField()\n    description_block3 = models.TextField()\n    description_block1_4 = models.TextField()",
         "detail": "accounts.models",
         "documentation": {}
     },
@@ -1633,16 +1573,7 @@
         "kind": 2,
         "importPath": "accounts.views",
         "description": "accounts.views",
-        "peekOfCode": "def us(request):\n    return render(request,'accounts/us.html')\ndef shop(request):\n    shop=Shop.objects.all()\n    context={\n        'shop':shop\n    }\n    return render(request,'accounts/shop.html',context)",
-        "detail": "accounts.views",
-        "documentation": {}
-    },
-    {
-        "label": "shop",
-        "kind": 2,
-        "importPath": "accounts.views",
-        "description": "accounts.views",
-        "peekOfCode": "def shop(request):\n    shop=Shop.objects.all()\n    context={\n        'shop':shop\n    }\n    return render(request,'accounts/shop.html',context)",
+        "peekOfCode": "def us(request):\n    return render(request,'accounts/us.html')",
         "detail": "accounts.views",
         "documentation": {}
     },
@@ -2038,7 +1969,7 @@
         "kind": 2,
         "importPath": "e_commerce.views",
         "description": "e_commerce.views",
-        "peekOfCode": "def home(request):\n    products=Product.objects.all().filter(is_available=True).order_by('created_date')\n    for product in products:\n        reviews=ReviewRating.objects.filter(product_id=product.id,status=True)\n    context={\n        'products':products,\n        'reviews':reviews\n    }\n    return render(request,'home.html',context)",
+        "peekOfCode": "def home(request):\n    products=Product.objects.all().filter(is_available=True).order_by('created_date')\n    for product in products:\n        reviews=ReviewRating.objects.filter(product_id=product.id,status=True)\n    context={\n        'products':products,\n        'reviews':reviews,\n    }\n    return render(request,'home.html',context)",
         "detail": "e_commerce.views",
         "documentation": {}
     },
@@ -2241,6 +2172,24 @@
         "documentation": {}
     },
     {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "store.migrations.0006_shop",
+        "description": "store.migrations.0006_shop",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('store', '0005_alter_productgallery_options'),\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='Shop',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),\n                ('photo1', models.ImageField(blank=True, upload_to='photo/categories')),",
+        "detail": "store.migrations.0006_shop",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "store.migrations.0007_remove_shop_description1_and_more",
+        "description": "store.migrations.0007_remove_shop_description1_and_more",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('store', '0006_shop'),\n    ]\n    operations = [\n        migrations.RemoveField(\n            model_name='shop',\n            name='description1',\n        ),\n        migrations.RemoveField(",
+        "detail": "store.migrations.0007_remove_shop_description1_and_more",
+        "documentation": {}
+    },
+    {
         "label": "ProductGalleryInline",
         "kind": 6,
         "importPath": "store.admin",
@@ -2263,7 +2212,7 @@
         "kind": 6,
         "importPath": "store.admin",
         "description": "store.admin",
-        "peekOfCode": "class VariationAdmin(admin.ModelAdmin):\n    list_display=('product','variation_category','variation_value','is_active')\n    list_editable=('is_active',)#ca c'est juste pour modifier la case de is_active te le mettre en un petit caree\n    list_filter = ('product','variation_category','variation_value')\nadmin.site.register(Product,ProductAdmin)\nadmin.site.register(Variation,VariationAdmin)\nadmin.site.register(ReviewRating)\nadmin.site.register(ProductGallery)",
+        "peekOfCode": "class VariationAdmin(admin.ModelAdmin):\n    list_display=('product','variation_category','variation_value','is_active')\n    list_editable=('is_active',)#ca c'est juste pour modifier la case de is_active te le mettre en un petit caree\n    list_filter = ('product','variation_category','variation_value')\nadmin.site.register(Product,ProductAdmin)\nadmin.site.register(Variation,VariationAdmin)\nadmin.site.register(ReviewRating)\nadmin.site.register(ProductGallery)\nadmin.site.register(Shop)",
         "detail": "store.admin",
         "documentation": {}
     },
@@ -2326,7 +2275,16 @@
         "kind": 6,
         "importPath": "store.models",
         "description": "store.models",
-        "peekOfCode": "class ProductGallery(models.Model):\n    product=models.ForeignKey(Product,default=None,on_delete=models.CASCADE)\n    image=models.ImageField(upload_to='store/products',max_length=255)\n    def __str__(self):\n        return self.product.product_name\n    class Meta:\n        verbose_name = 'productgallery'\n        verbose_name_plural = 'product allery'",
+        "peekOfCode": "class ProductGallery(models.Model):\n    product=models.ForeignKey(Product,default=None,on_delete=models.CASCADE)\n    image=models.ImageField(upload_to='store/products',max_length=255)\n    def __str__(self):\n        return self.product.product_name\n    class Meta:\n        verbose_name = 'productgallery'\n        verbose_name_plural = 'product allery'\nclass Shop(models.Model):\n    name = models.CharField(max_length=50, blank=True)",
+        "detail": "store.models",
+        "documentation": {}
+    },
+    {
+        "label": "Shop",
+        "kind": 6,
+        "importPath": "store.models",
+        "description": "store.models",
+        "peekOfCode": "class Shop(models.Model):\n    name = models.CharField(max_length=50, blank=True)\n    description_block2_4 = models.TextField()\n    def get_absolute_url(self):\n        return reverse('shop_detail', args=[str(self.id)])",
         "detail": "store.models",
         "documentation": {}
     },
@@ -2335,7 +2293,7 @@
         "kind": 5,
         "importPath": "store.urls",
         "description": "store.urls",
-        "peekOfCode": "urlpatterns = [\n    path('store/', views.store, name='store'),\n    path('store/category/<slug:category_slug>/', views.store, name='products_by_category'),  # Fixed the URL pattern\n    path('store/category/<slug:category_slug>/<slug:product_slug>/', views.product_detail, name='products_details'),  # Fixed the URL pattern\n    path('store/search/',views.search,name='search'),\n    path('store/submit_review/<int:product_id>',views.submit_review,name=\"submit_review\"),\n]",
+        "peekOfCode": "urlpatterns = [\n    path('store/', views.store, name='store'),\n    path('store/category/<slug:category_slug>/', views.store, name='products_by_category'),  # Fixed the URL pattern\n    path('store/category/<slug:category_slug>/<slug:product_slug>/', views.product_detail, name='products_details'),  # Fixed the URL pattern\n    path('store/search/',views.search,name='search'),\n    path('store/submit_review/<int:product_id>',views.submit_review,name=\"submit_review\"),\n    path('store/',views.submit_review,name=\"submit_review\"),\n    path('store/shop/',views.shop,name=\"shop\"),\n]",
         "detail": "store.urls",
         "documentation": {}
     },
@@ -2372,6 +2330,15 @@
         "importPath": "store.views",
         "description": "store.views",
         "peekOfCode": "def submit_review(request, product_id):\n    url= request.META.get('HTTP_REFERER')\n    if request.method =='POST':\n        try:\n            reviews=ReviewRating.objects.get(user__id=request.user.id,product__id=product_id)\n            form=ReviewForm(request.POST,instance=reviews)\n            form.save()\n            messages.success(request,'Thank you your review has been update!!')\n            return redirect(url)\n        except ReviewRating.DoesNotExist:",
+        "detail": "store.views",
+        "documentation": {}
+    },
+    {
+        "label": "shop",
+        "kind": 2,
+        "importPath": "store.views",
+        "description": "store.views",
+        "peekOfCode": "def shop(request):\n    shops = Shop.objects.all()\n    context = {\n        'shops': shops\n    }\n    return render(request, 'accounts/shop.html', context)",
         "detail": "store.views",
         "documentation": {}
     },
