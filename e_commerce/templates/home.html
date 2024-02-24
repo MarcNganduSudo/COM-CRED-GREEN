@@ -128,9 +128,9 @@
 </style>
   <div class="container-fluid">
 	<div class="row mx-5 ">
-		<div class="col-2 py-2">
+		<div class="col-2 mt-4 py-2 ">
 			<div class="card" style="width: 18rem; border:3px solid rgb(235, 225, 225)">
-				<div class="card-header bg-primary" style="color: white; max-height: 600px; overflow-y: auto;">
+				<div class="card-header bg-primary" style="color: white; max-height: 200px; overflow-y: auto;">
 				  All Category
 				</div>
 				<ul class="list-group list-group-flush" style="max-height: 620px; overflow-y: auto;">
@@ -228,101 +228,15 @@
 		<div class="col-2 py-2">
 			<div class="card" style="width: 18rem; border:3px solid rgb(235, 225, 225)">
 				<div class="card-header bg-primary" style="color: white; max-height: 200px; overflow-y: auto;">
-				  Featured
+				  All product
 				</div>
-				<ul class="list-group list-group-flush" style="max-height: 487px; overflow-y: auto;">
-				  <li class="list-group-item"><a href="{% url 'store'%}">All product</a></li>
-				  <li class="list-group-item"><a href="{% url 'store'%}">All product</a></li>
-				  <li class="list-group-item"><a href="{{ category.get_url }}">Category</a></li>
-				  <li class="list-group-item"><a href="{% url 'store'%}">{{category.product_name}}</a></li>
-				  <li class="list-group-item"><a href="{% url 'store'%}">All product</a></li>
-				  <li class="list-group-item"><a href="{% url 'store'%}">All product</a></li>
-				  <li class="list-group-item"><a href="{% url 'store'%}">All product</a></li>
-				  <li class="list-group-item"><a href="{% url 'store'%}">All product</a></li>
-				  <li class="list-group-item"><a href="{% url 'store'%}">All product</a></li>
-				  <li class="list-group-item"><a href="{% url 'store'%}">All product</a></li>
-				  <li class="list-group-item"><a href="{% url 'store'%}">All product</a></li>
-				  <li class="list-group-item"><a href="{% url 'store'%}">All product</a></li>
-				  <li class="list-group-item"><a href="{% url 'store'%}">All product</a></li>
-				  <li class="list-group-item"><a href="{% url 'store'%}">All product</a></li>
-				  <li class="list-group-item"><a href="{% url 'store'%}">All product</a></li>
-  
+				<ul class="list-group list-group-flush" style="max-height: 987px; overflow-y: auto;">
+					{%for product in products %}
+					<li class="list-group-item"><a href="{{ product.get_url }}" class="title">{{ product.product_name}}</a></li>
+				 	 {% endfor %}
 				</ul>
 			  </div>
 		</br>
-			<div class="card" style="width: 18rem; border:3px solid rgb(235, 225, 225)">
-				<div class="card-header bg-primary" style="color: white; max-height: 200px; overflow-y: auto;">
-				  Featured
-				</div>
-				<ul class="list-group list-group-flush" style="max-height: 487px; overflow-y: auto;">
-				  <li class="list-group-item"><a href="{% url 'store'%}">All product</a></li>
-				  <li class="list-group-item"><a href="{% url 'store'%}">All product</a></li>
-				  <li class="list-group-item"><a href="{{ category.get_url }}">Category</a></li>
-				  <li class="list-group-item"><a href="{% url 'store'%}">All product</a></li>
-				  <li class="list-group-item"><a href="{% url 'store'%}">All product</a></li>
-				  <li class="list-group-item"><a href="{% url 'store'%}">All product</a></li>
-				  <li class="list-group-item"><a href="{% url 'store'%}">All product</a></li>
-				  <li class="list-group-item"><a href="{% url 'store'%}">All product</a></li>
-				  <li class="list-group-item"><a href="{% url 'store'%}">All product</a></li>
-				  <li class="list-group-item"><a href="{% url 'store'%}">All product</a></li>
-				  <li class="list-group-item"><a href="{% url 'store'%}">All product</a></li>
-				  <li class="list-group-item"><a href="{% url 'store'%}">All product</a></li>
-				  <li class="list-group-item"><a href="{% url 'store'%}">All product</a></li>
-				  <li class="list-group-item"><a href="{% url 'store'%}">All product</a></li>
-				  <li class="list-group-item"><a href="{% url 'store'%}">All product</a></li>
-  
-				</ul>
-			  </div>
-			</br>
-
-			  <div class="card" style="width: 18rem; border:3px solid rgb(235, 225, 225)">
-				<div class="card-header bg-primary" style="color: white; max-height: 200px; overflow-y: auto;">
-				  Featured
-				</div>
-				<ul class="list-group list-group-flush" style="max-height: 487px; overflow-y: auto;">
-				  <li class="list-group-item"><a href="{% url 'store'%}">All product</a></li>
-				  <li class="list-group-item"><a href="{% url 'store'%}">All product</a></li>
-				  <li class="list-group-item"><a href="{{ category.get_url }}">Category</a></li>
-				  <li class="list-group-item"><a href="{% url 'store'%}">All product</a></li>
-				  <li class="list-group-item"><a href="{% url 'store'%}">All product</a></li>
-				  <li class="list-group-item"><a href="{% url 'store'%}">All product</a></li>
-				  <li class="list-group-item"><a href="{% url 'store'%}">All product</a></li>
-				  <li class="list-group-item"><a href="{% url 'store'%}">All product</a></li>
-				  <li class="list-group-item"><a href="{% url 'store'%}">All product</a></li>
-				  <li class="list-group-item"><a href="{% url 'store'%}">All product</a></li>
-				  <li class="list-group-item"><a href="{% url 'store'%}">All product</a></li>
-				  <li class="list-group-item"><a href="{% url 'store'%}">All product</a></li>
-				  <li class="list-group-item"><a href="{% url 'store'%}">All product</a></li>
-				  <li class="list-group-item"><a href="{% url 'store'%}">All product</a></li>
-				  <li class="list-group-item"><a href="{% url 'store'%}">All product</a></li>
-  
-				</ul>
-			  </div>
-			</br>
-
-			  <div class="card" style="width: 18rem; border:3px solid rgb(235, 225, 225)">
-				<div class="card-header bg-primary" style="color: white; max-height: 200px; overflow-y: auto;">
-				  Featured
-				</div>
-				<ul class="list-group list-group-flush" style="max-height: 487px; overflow-y: auto;">
-				  <li class="list-group-item"><a href="{% url 'store'%}">All product</a></li>
-				  <li class="list-group-item"><a href="{% url 'store'%}">All product</a></li>
-				  <li class="list-group-item"><a href="{{ category.get_url }}">Category</a></li>
-				  <li class="list-group-item"><a href="{% url 'store'%}">All product</a></li>
-				  <li class="list-group-item"><a href="{% url 'store'%}">All product</a></li>
-				  <li class="list-group-item"><a href="{% url 'store'%}">All product</a></li>
-				  <li class="list-group-item"><a href="{% url 'store'%}">All product</a></li>
-				  <li class="list-group-item"><a href="{% url 'store'%}">All product</a></li>
-				  <li class="list-group-item"><a href="{% url 'store'%}">All product</a></li>
-				  <li class="list-group-item"><a href="{% url 'store'%}">All product</a></li>
-				  <li class="list-group-item"><a href="{% url 'store'%}">All product</a></li>
-				  <li class="list-group-item"><a href="{% url 'store'%}">All product</a></li>
-				  <li class="list-group-item"><a href="{% url 'store'%}">All product</a></li>
-				  <li class="list-group-item"><a href="{% url 'store'%}">All product</a></li>
-				  <li class="list-group-item"><a href="{% url 'store'%}">All product</a></li>
-  
-				</ul>
-			  </div>
 			
 		  </div>
 		<div class="col-10">
@@ -340,7 +254,14 @@
 					{%for product in products %}
 					<div class="col-md-2">
 						<div class="card card-product-grid">
-							<a href="{{ product.get_url }}" class="img-wrap"> <img src="{{ product.image.url }}"> </a>
+							<div class="container-fluid">
+								<div class="row">
+									<div class="col-9"></div>
+									<div class="col-3 border bg text-success-light"style="height: 30px; text-decoration: line-through;font-weight:bold;">${{ product.price_bar }}</div>
+
+								</div>
+							</div>
+							<a href="{{ product.get_url }}" class="img-wrap pt-4"> <img src="{{ product.image.url }}"> </a>
 							<figcaption class="info-wrap">
 								<a href="{{ product.get_url }}" class="title">{{ product.product_name}}</a>
 							<div class="price mt-1">${{ product.price}}</div> <!-- price-wrap.// -->

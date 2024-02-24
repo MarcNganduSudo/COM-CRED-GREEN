@@ -153,7 +153,7 @@
 					<h1 class=" txt1 text-light font-weight-bold mb-3" style="font-size: 5rem; display: inline-block;">Don't miss amazing</h1>
 					<h1 class=" txt1 text-light font-weight-bold mb-3" style="font-size: 3rem; display: inline-block;">grocery deals</h1>
 					<p class="mb-5 signup_line">Sign up for our daily newsletter</p>
-					<button class="btn btn-primary btn-lg">Subscribe</button>
+					<a class="btn btn-primary" href="{%url 'register' %}">Subscribe</a>
 				  </div>
 				</div>
 				<div class="carousel-item ">
@@ -162,7 +162,7 @@
 					<h1 class=" txt1 text-light font-weight-bold mb-3" style="font-size: 5rem; display: inline-block;">Don't miss amazing</h1>
 					<h1 class=" txt1 text-light font-weight-bold mb-3" style="font-size: 3rem; display: inline-block;">grocery deals</h1>
 					<p class="text-light mb-5" style="font-size: 1.5rem; display: inline-block;">Sign up for our daily newsletter</p>
-					<button class="btn btn-primary btn-lg">Subscribe</button>
+					<a class="btn btn-primary" href="{%url 'register' %}">Subscribe</a>
 				  </div>
 				</div>
 			  </div>
@@ -319,7 +319,7 @@
         </div>
     </div>
     <div class="container-fluid mt-5 mb-5" style="width: 100%;">
-        <h1 style="text-align: center;">OUR SHOPS</h1>
+        <h1 style="text-align: center;">OUR VENDORS</h1>
         <div class="row border border-5 rounded-top mx-5 d-flex flex-nowrap" style="overflow-x: auto; height: 450px;">
             {% for shop in shops %}
             <div class="col-3 border border-5 border-radius rounded mx-2 mt-2 mb-2">

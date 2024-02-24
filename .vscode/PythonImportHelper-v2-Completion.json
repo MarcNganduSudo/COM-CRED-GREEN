@@ -328,6 +328,22 @@
         "documentation": {}
     },
     {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
         "label": "models",
         "importPath": "django.db",
         "description": "django.db",
@@ -2190,6 +2206,15 @@
         "documentation": {}
     },
     {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "store.migrations.0008_product_price_bar",
+        "description": "store.migrations.0008_product_price_bar",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('store', '0007_remove_shop_description1_and_more'),\n    ]\n    operations = [\n        migrations.AddField(\n            model_name='product',\n            name='price_bar',\n            field=models.IntegerField(default=True),\n        ),",
+        "detail": "store.migrations.0008_product_price_bar",
+        "documentation": {}
+    },
+    {
         "label": "ProductGalleryInline",
         "kind": 6,
         "importPath": "store.admin",
@@ -2239,7 +2264,7 @@
         "kind": 6,
         "importPath": "store.models",
         "description": "store.models",
-        "peekOfCode": "class Product(models.Model):\n    product_name=models.CharField(max_length=50,unique=True)\n    slug=models.SlugField(max_length=50,unique=True)\n    description=models.TextField(max_length=500,blank=True)\n    price=models.IntegerField()\n    image=models.ImageField(upload_to='photos/products')\n    stock=models.IntegerField()\n    is_available=models.BooleanField(default=True)\n    category=models.ForeignKey(category,on_delete=models.CASCADE)\n    created_date=models.DateTimeField(auto_now_add=True)",
+        "peekOfCode": "class Product(models.Model):\n    product_name=models.CharField(max_length=50,unique=True)\n    slug=models.SlugField(max_length=50,unique=True)\n    description=models.TextField(max_length=500,blank=True)\n    price=models.IntegerField()\n    price_bar=models.IntegerField(default=True)\n    image=models.ImageField(upload_to='photos/products')\n    stock=models.IntegerField()\n    is_available=models.BooleanField(default=True)\n    category=models.ForeignKey(category,on_delete=models.CASCADE)",
         "detail": "store.models",
         "documentation": {}
     },

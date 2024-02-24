@@ -10,6 +10,7 @@ class Product(models.Model):
     slug=models.SlugField(max_length=50,unique=True)
     description=models.TextField(max_length=500,blank=True)
     price=models.IntegerField()
+    price_bar=models.IntegerField(default=True)
     image=models.ImageField(upload_to='photos/products')
     stock=models.IntegerField()
     is_available=models.BooleanField(default=True)
